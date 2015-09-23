@@ -26,9 +26,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-}
 
 /* -------------------------------- 
 
@@ -54,9 +51,9 @@ Main components
 
 -------------------------------- */
 header {
-  position: relative;
+ 
   height: 200px;
-  background: white;
+  color: white;
   text-align: center;
   margin-bottom: 1em;
   padding-top: 3em;
@@ -79,7 +76,7 @@ header h1 {
     padding-top: 11em;
   }
   header #cd-logo {
-    position: absolute;
+   
     top: 40px;
     left: 5%;
   }
