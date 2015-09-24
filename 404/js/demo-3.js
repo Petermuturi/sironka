@@ -1,7 +1,7 @@
 (function() {
 
     var width, height, largeHeader, canvas, ctx, triangles, target, animateHeader = true;
-    var colors = ['72,35,68', '43,81,102', '66,152,103', '250,178,67', '224,33,48'];
+    var colors = ['86,24,40', '24,75,86', '192,209,213', '164,168,169', '224,33,48'];
 
     // Main
     initHeader();

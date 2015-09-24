@@ -35,9 +35,9 @@ function validation_for_signup()
                                                 document.signup.password.focus();
                                                 return false;
                                 }
-                                else if(document.signup.password.value.length<6)
+                                else if(document.signup.password.value.length<8)
                                 {
-                                                alert("Password is too short.");
+                                                alert("Password is too short.\nShould be atleast 8 characters");
                                                 document.signup.password.focus();
                                                 return false;
                                 }
@@ -51,43 +51,6 @@ function validation_for_signup()
                                 {
                                                 alert("Password does not match.");
                                                 document.signup.password.focus();
-                                                return false;
-                                }
-                               
-                                if(document.signup.firstname.value=="")
-                                {
-                                                alert("please enter firstname");
-                                                document.signup.firstname.focus();
-                                                return false;
-                                }
-                                else if(check_name.test(document.signup.firstname.value) == false)
-                                {
-                                                alert('Invalid  firstname');
-                                                document.signup.firstname.focus();
-                                                return false;
-                                }
-                                if(document.signup.lastname.value=="")
-                                {
-                                                alert("please enter lastname");
-                                                document.signup.lastname.focus();
-                                                return false;
-                                }
-                                else if(check_name.test(document.signup.lastname.value) == false)
-                                {
-                                                alert('Invalid  lastname');
-                                                document.signup.lastname.focus();
-                                                return false;
-                                }
-                                if(document.signup.phone.value=="")
-                                {
-                                                alert("please enter phone");
-                                                document.signup.phone.focus();
-                                                return false;
-                                }
-                                else if(check_phone.test(document.signup.phone.value) == false)
-                                {
-                                                alert('Invalid  phone');
-                                                document.signup.phone.focus();
                                                 return false;
                                 }
 }
