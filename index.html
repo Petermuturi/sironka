@@ -11,12 +11,24 @@
 		<link rel="stylesheet" type="text/css" href="css/normalizeslide.css" />
 		<link rel="stylesheet" type="text/css" href="css/demoslide.css" />
 		<link rel="stylesheet" type="text/css" href="css/componentslide.css" />
-		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+		<link rel="stylesheet" href="css/resetln.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/styleln.css"> <!-- Resource style -->
+	<!-- morphine links -->
+	
+		
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/content.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<!-- morphine links -->
+	<script src="js/modernizrln.js"></script> <!-- Modernizr -->
 		<script src="js/modernizr.customslide.js"></script>
+		<script type="text/javascript" src="sironka.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+<script src="//www.parsecdn.com/js/parse-1.6.2.min.js"></script>
 	</head>
-	<body>
+	<body ng-app="AuthApp">
 		<div class="container">
 		<div class="codrops-top clearfix">
 			<div id="cd-nav">
@@ -31,11 +43,61 @@
 				<li><a style="color:#B8B8B8;" class="nav" href="#0">Face</a></li>
 				<li><a style="color:#B8B8B8;" class="nav" href="#0">Hair</a></li>
 				<li><a style="color:#B8B8B8;" class="nav" href="#0">Blog</a></li>
-				<li><a style="color:#B8B8B8;" class="nav" href="sign.html">Sign In</a></li>				
-			</ul>
-		</div>
+				<li><a style="color:#B8B8B8;" class="nav" href="#0">Sign In</a></li>
+   			</ul>
+   
+  		</div>
 	</div>
 	</div>
+
+
+	<div class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
+		<button style="background:none; display:center; padding:0px;" type="button">join</button>
+		<div class="morph-content">
+		<span class="icon icon-close">Close the dialog</span>
+		<div>
+		<div class="content-style-form content-style-form-2">
+			<h2>Sign Up</h2>
+		<div ng-hide="currentUser">
+    <form ng-show="scenario == 'Sign up'" name="signup" action="" onSubmit="return validation_for_signup()" method="post">
+<ul>
+
+<li>
+<p>Username:</p>
+<p><input type="text" name="username" value="" ng-model="user.username" size="50" /></p></li>
+<li>
+<p>Email:</p>
+<p><input type="text" name="email"  value="" ng-model="user.email" size="50" /></p></li>
+
+<li><p>Password:</p>
+<p><input type="password" name="password"  value="" ng-model="user.password" size="50" /></p></li>
+<li>
+<p>Password Confirm:</p>
+<p><input type="password" name="passconf"  value="" ng-model="user.passconf" size="50" /></p></li>
+<li>
+  <a href="index.html" ng-click="signUp(user)">Sign up</a>
+      or <a href="#" ng-click='scenario="Log in"'>Log in</a>
+</li></ul>
+</form>
+
+    
+    <form ng-show="scenario == 'Log in'">
+      <h2>Log in</h2>
+      Username: <input type="text" ng-model="user.username" /><br />
+      Password: <input type="password" ng-model="user.password" /><br />
+     <a ng-click="logIn(user)"  href="index.html"> Log in</a>
+      or <a href="#" ng-click='scenario="Sign up"'>Sign up</a>
+    </form>
+  </div>
+			
+			<div ng-show="currentUser">
+    <h1>Welcome {{currentUser.get('username')}}</h1>
+    <p> You have been successfully logged in</p>
+    <button ng-click="logOut(user)">Log out</button>
+  </div>					</div>
+							</div>
+						</div>
+					</div><!-- morph-button -->
 	<header class="codrops-header">
 	<div style="position:absolute;padding-left:67px;">
 				<h1><img src="img/title.png" height="110px"width="270px;"><span style="font-size:25px;">PURE.SIMPLE.</span></h1>
@@ -57,8 +119,6 @@ border-color: rgba(0,0,0,0.3) transparent transparent;position:relative;
 		</div><!-- /container -->
 		<!-- body continues here! -->
 	<div>
-		
-
 
 
 
@@ -66,13 +126,143 @@ border-color: rgba(0,0,0,0.3) transparent transparent;position:relative;
 
 		
 	</div>	
-		<script src="js/jquery-2.1.1.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script type="text/javascript">
+    angular.module('AuthApp', [])
+.run(['$rootScope', function($scope) {
+  $scope.scenario = 'Sign up';
+  $scope.currentUser = Parse.User.current();
+  
+  $scope.signUp = function(form) {
+     var user = new Parse.User();
+user.set("username", form.username);
+user.set("email", form.email);
+user.set("password", form.password);
+user.set("confirm", form.passconf);
+
+    
+    user.signUp(null, {
+      success: function(user) {
+        $scope.currentUser = user;
+        $scope.$apply();
+      },
+      error: function(user, error) {
+        alert("Unable to sign up:  " + error.code + " " + error.message);
+      }
+    });    
+  };
+  
+  $scope.logIn = function(form) {
+    Parse.User.logIn(form.username, form.password, {
+      success: function(user) {
+        $scope.currentUser = user;
+        $scope.$apply();
+      },
+      error: function(user, error) {
+        alert("Unable to log in: " + error.code + " " + error.message);
+      }
+    });
+  };
+  
+  $scope.logOut = function(form) {
+    Parse.User.logOut();
+    $scope.currentUser = null;
+  };
+}]);
+
+</script>
+<script type="text/javascript">
+  Parse.initialize("enNfvaZh8DCXVXxhnJKTSI3pj8P4rILSGHnlmX2w", "3iCBpsYvGi3SYKI8XyBOUMkzOw7SmYwPN8S4GhwX");
+
+
+  
+// other fields can be set just like with Parse.Object
+
+  
+user.signUp(null, {
+  success: function(user) {
+    // Hooray! Let them use the app now.
+  },
+  error: function(user, error) {
+    // Show the error message somewhere and let the user try again.
+    alert("Error: " + error.code + " " + error.message);
+  }
+});
+  </script>
+		<script src="js/jquery-2.1.1ln.js"></script>
+        <script src="js/mainln.js"></script> <!-- Resource jQuery -->
 		<script src="js/classieslide.js"></script>
 		<script src="js/boxesFxslide.js"></script>
 		<script>
 			new BoxesFx( document.getElementById( 'boxgallery' ) );
 		</script>
 		<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+		<!-- morphine scripts -->
+		<script src="js/classie.js"></script>
+		<script src="js/uiMorphingButton_fixed.js"></script>
+		<script>
+			(function() {
+				var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+				// trick to prevent scrolling when opening/closing button
+				function noScrollFn() {
+					window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+				}
+
+				function noScroll() {
+					window.removeEventListener( 'scroll', scrollHandler );
+					window.addEventListener( 'scroll', noScrollFn );
+				}
+
+				function scrollFn() {
+					window.addEventListener( 'scroll', scrollHandler );
+				}
+
+				function canScroll() {
+					window.removeEventListener( 'scroll', noScrollFn );
+					scrollFn();
+				}
+
+				function scrollHandler() {
+					if( !didScroll ) {
+						didScroll = true;
+						setTimeout( function() { scrollPage(); }, 60 );
+					}
+				};
+
+				function scrollPage() {
+					scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+					didScroll = false;
+				};
+
+				scrollFn();
+
+				[].slice.call( document.querySelectorAll( '.morph-button' ) ).forEach( function( bttn ) {
+					new UIMorphingButton( bttn, {
+						closeEl : '.icon-close',
+						onBeforeOpen : function() {
+							// don't allow to scroll
+							noScroll();
+						},
+						onAfterOpen : function() {
+							// can scroll again
+							canScroll();
+						},
+						onBeforeClose : function() {
+							// don't allow to scroll
+							noScroll();
+						},
+						onAfterClose : function() {
+							// can scroll again
+							canScroll();
+						}
+					} );
+				} );
+
+				// for demo purposes only
+				[].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
+					bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
+				} );
+			})();
+		</script>
 	</body>
 </html>

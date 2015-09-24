@@ -1,104 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="sironka.css"/>
+         <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="parse.css"/>
-<script type="text/javascript">
-function validation_for_signup()
-{
-
-                var check_email = /^[\w\.]+@[a-zA-Z_]+?\.[a-zA-Z\.]{2,6}$/;
-                var check_username = /^[a-zA-Z0-9_]{3,16}$/;
-                var check_name = /^[a-zA-Z]{3,16}$/;
-                var check_phone = /^[0-9]{3,16}$/;
-                                if(document.signup.username.value=="")
-                                {
-                                                alert("please enter username");
-                                                document.signup.username.focus();
-                                                return false;
-                                }
-                                else if(check_username.test(document.signup.username.value) == false)
-                                {
-                                                alert('Invalid  username');
-                                                document.signup.username.focus();
-                                                return false;
-                                }
-                                if(document.signup.email.value=="")
-                                {
-                                                alert("please enter email");
-                                                document.signup.email.focus();
-                                                return false;
-                                }
-                                else if(check_email.test(document.signup.email.value) == false)
-                                {
-                                                alert('Invalid  email');
-                                                document.signup.email.focus();
-                                                return false;
-                                }
-                                if(document.signup.password.value=='')
-                                {
-                                                alert("Please enter Password.");
-                                                document.signup.password.focus();
-                                                return false;
-                                }
-                                else if(document.signup.password.value.length<6)
-                                {
-                                                alert("Password is too short.");
-                                                document.signup.password.focus();
-                                                return false;
-                                }
-                                if(document.signup.passconf.value=='')
-                                {
-                                                alert("Please confirm Password.");
-                                                document.signup.passconf.focus();
-                                                return false;
-                                }
-                                else if(document.signup.password.value!=document.signup.passconf.value)
-                                {
-                                                alert("Password does not match.");
-                                                document.signup.password.focus();
-                                                return false;
-                                }
-                               
-                                if(document.signup.firstname.value=="")
-                                {
-                                                alert("please enter firstname");
-                                                document.signup.firstname.focus();
-                                                return false;
-                                }
-                                else if(check_name.test(document.signup.firstname.value) == false)
-                                {
-                                                alert('Invalid  firstname');
-                                                document.signup.firstname.focus();
-                                                return false;
-                                }
-                                if(document.signup.lastname.value=="")
-                                {
-                                                alert("please enter lastname");
-                                                document.signup.lastname.focus();
-                                                return false;
-                                }
-                                else if(check_name.test(document.signup.lastname.value) == false)
-                                {
-                                                alert('Invalid  lastname');
-                                                document.signup.lastname.focus();
-                                                return false;
-                                }
-                                if(document.signup.phone.value=="")
-                                {
-                                                alert("please enter phone");
-                                                document.signup.phone.focus();
-                                                return false;
-                                }
-                                else if(check_phone.test(document.signup.phone.value) == false)
-                                {
-                                                alert('Invalid  phone');
-                                                document.signup.phone.focus();
-                                                return false;
-                                }
-}
-
-
-</script>
+<title>Sign In|Sironka</title>
+<script type="text/javascript" src="sironka.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
@@ -112,7 +20,6 @@ function validation_for_signup()
 <li>
 <p>Username:</p>
 <p><input type="text" name="username" value="" ng-model="user.username" size="50" /></p></li>
-
 <li>
 <p>Email:</p>
 <p><input type="text" name="email"  value="" ng-model="user.email" size="50" /></p></li>
@@ -132,7 +39,7 @@ function validation_for_signup()
 <p>Phone:</p>
 <p><input type="text" name="phone"  value="" ng-model="user.phone" size="50" /></p></li>
 <li>
-  <button ng-click="signUp(user)">Sign up</button>
+  <a href="index.html" ng-click="signUp(user)">Sign up</a>
       or <a href="#" ng-click='scenario="Log in"'>Log in</a>
 </li></ul>
 </form>
@@ -142,7 +49,7 @@ function validation_for_signup()
       <h2>Log in</h2>
       Username: <input type="text" ng-model="user.username" /><br />
       Password: <input type="password" ng-model="user.password" /><br />
-      <button ng-click="logIn(user)">Log in</button>
+     <a ng-click="logIn(user)"  href="#"> Log in</a>
       or <a href="#" ng-click='scenario="Sign up"'>Sign up</a>
     </form>
   </div>
@@ -200,7 +107,8 @@ user.set("phone", form.phone);
 
 </script>
 <script type="text/javascript">
-  
+  Parse.initialize("enNfvaZh8DCXVXxhnJKTSI3pj8P4rILSGHnlmX2w", "3iCBpsYvGi3SYKI8XyBOUMkzOw7SmYwPN8S4GhwX");
+
 
   
 // other fields can be set just like with Parse.Object
