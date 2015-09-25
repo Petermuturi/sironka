@@ -11,15 +11,16 @@
 }
 .bout{
  text-align: center;
- padding-top: 20px;
+ padding-top: 40px;
+ font-size: 14px;
 
 }
 .pp{
 	text-align: center;
 	color: black;
 	font-weight: 100;
-	font-size: 16px;
- padding-top: 20px;
- padding-bottom: 12px;
+	font-size: 20px;
+ padding-top: 43px;
+ padding-bottom: 40px;
 
 }
