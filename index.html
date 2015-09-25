@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title>Sironka</title>
-		 <link rel="icon" type="image/png" href="img/logo2.png"  />
+		 <link rel="icon" type="image/png" href="img/icon.png" />
 		<link rel="stylesheet" type="text/css" href="sironka.css"/>
 		 <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
@@ -47,24 +47,24 @@
     <form ng-show="scenario == 'Sign up'" name="signup" action="" onSubmit="return validation_for_signup()" method="post">
 <ul style="padding-top:90px;">
 
- Email: <input id="email" type="email" class="validate input" name="email"  value="" ng-model="user.email" size="50">
+ Email: <input style="color: #4F002F;" id="email" type="email" class="validate" name="email"  value="" ng-model="user.email" size="50">
      
      <div class="row">
         <div class="input-field col s6"> 
-Username: <input id="username" type="text" class="validate input" name="username" value="" ng-model="user.username" size="50" >
+Username: <input style="color: #4F002F;" id="username" type="text" class="validate" name="username" value="" ng-model="user.username" size="50" >
     </div>
  
     <div class="input-field col s6">      
- Phone number: <input id="phone" type="text" class="validate input" name="phone"  value="" ng-model="user.phone" size="50">     
+ Phone number: <input style="color: #4F002F;" id="phone" type="text" class="validate" name="phone"  value="" ng-model="user.phone" size="50">     
   </div>
   </div>
         <div class="row">
         <div class="input-field col s6">
- Password:<input id="password" type="password" class="validate input" name="password"  value="" ng-model="user.password" size="50">
+ Password:<input style="color: #4F002F;" id="password" type="password" class="validate" name="password"  value="" ng-model="user.password" size="50">
          
         </div>
         <div class="input-field col s6">
-Confirm Password: <input id="passconf" type="password" class="validate input" name="passconf"  value="" ng-model="user.passconf" size="50">
+Confirm Password: <input style="color: #4F002F;" id="passconf" type="password" class="validate" name="passconf"  value="" ng-model="user.passconf" size="50">
          
         </div>
           <p style="font-size:11px;"><a  href="#" class="sign" ng-click="signUp(user)">Sign up</a>
@@ -77,8 +77,8 @@ Confirm Password: <input id="passconf" type="password" class="validate input" na
 
     
     <form ng-show="scenario == 'Log in'">
-      Username: <input type="text" ng-model="user.username" class="input" /><br />
-      Password: <input type="password" ng-model="user.password" class="input" /><br />
+      Username: <input style="color: #4F002F;" type="text" ng-model="user.username" /><br />
+      Password: <input style="color: #4F002F;" type="password" ng-model="user.password" /><br />
      <a ng-click="logIn(user)" class="sign" href="#"> Log in</a>
       or <a href="#" class="sign" ng-click='scenario="Sign up"'>Sign up</a>
     </form>
