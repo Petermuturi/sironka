@@ -198,7 +198,7 @@ header h1 {
     border-bottom: none;
   }
   #cd-nav li a:hover {
-    color: #00bd9b;
+   color: #0B4C5F;
   }
   #cd-nav.is-fixed ul {
     /* when the user scrolls down, the navigation moves to the bottom right in Fixed position - as on touch devices */

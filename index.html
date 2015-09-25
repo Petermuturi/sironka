@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<title>Sironka</title>
+		 <link rel="icon" type="image/png" href="img/logo2.png"  />
 		<link rel="stylesheet" type="text/css" href="sironka.css"/>
 		 <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
@@ -14,7 +15,7 @@
 		<link rel="stylesheet" href="css/resetln.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/styleln.css"> <!-- Resource style -->
 	<!-- morphine links -->
-	
+	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/content.css" />
@@ -31,74 +32,84 @@
 	<body ng-app="AuthApp">
 		<div class="container">
 		<div class="codrops-top clearfix">
-			<div id="cd-nav">
-		<a href="#0" class="cd-nav-trigger"><span></span></a>
-       <div class="row">
-      
-          <div id="cd-logo"  style="padding-top:30px;"><a href="#0"><img src="img/logo.png" class="nav" height="60px" width="150px"alt="Logo"></a></div>
-</div>
-		<div id="cd-main-nav">
-			<ul>
-				<li><a style="color:#B8B8B8;" class="nav" href="#0">Body</a></li>
-				<li><a style="color:#B8B8B8;" class="nav" href="#0">Face</a></li>
-				<li><a style="color:#B8B8B8;" class="nav" href="#0">Hair</a></li>
-				<li><a style="color:#B8B8B8;" class="nav" href="#0">Blog</a></li>
-				
-   			</ul>
-  		</div>
-	</div>
-	
-	</div>
-	<!-- form -->
-	<div  class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
-	 <button style="color:#B8B8B8;background:none; font-weight:400;font-size:12px;" class="nav" type="button">join</button>
-		<div  class="morph-content">
+			<div style="float:right; padding-top:16px;" class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
+	 <button  style="color:#B8B8B8;background:none; font-weight:400;font-size:30px;" class="nav" type="button">
+	 <i class="fa fa-cart-arrow-down"></i>
+</button>
+		<div  class="morph-content" style="background-color:#E8E8E8;color: #0B4C5F;">
 		<span class="icon icon-close">Close the dialog</span>
 		<div>
-		<div  class="content-style-form content-style-form-2">
-			<h2>Sign Up</h2>
+		<div id="icon" class="content-style-form content-style-form-2" style="padding-bottom:">
+			<img src="img/logo2.png" style="height:90px; width:120px;position:absolute;text-align:center;margin-left:140px;">
 		<div ng-hide="currentUser">
     <form ng-show="scenario == 'Sign up'" name="signup" action="" onSubmit="return validation_for_signup()" method="post">
-<ul>
+<ul style="padding-top:90px;">
 
-<li>
-<p>Username:</p>
-<p><input type="text" name="username" value="" ng-model="user.username" size="50" /></p></li>
-<li>
-<p>Email:</p>
-<p><input type="text" name="email"  value="" ng-model="user.email" size="50" /></p></li>
+ Email: <input id="email" type="email" class="validate input" name="email"  value="" ng-model="user.email" size="50">
+     
+     <div class="row">
+        <div class="input-field col s6"> 
+Username: <input id="username" type="text" class="validate input" name="username" value="" ng-model="user.username" size="50" >
+    </div>
+ 
+    <div class="input-field col s6">      
+ Phone number: <input id="phone" type="text" class="validate input" name="phone"  value="" ng-model="user.phone" size="50">     
+  </div>
+  </div>
+        <div class="row">
+        <div class="input-field col s6">
+ Password:<input id="password" type="password" class="validate input" name="password"  value="" ng-model="user.password" size="50">
+         
+        </div>
+        <div class="input-field col s6">
+Confirm Password: <input id="passconf" type="password" class="validate input" name="passconf"  value="" ng-model="user.passconf" size="50">
+         
+        </div>
+          <p style="font-size:11px;"><a  href="#" class="sign" ng-click="signUp(user)">Sign up</a>
+      or <a href="#" class="sign" ng-click='scenario="Log in"'>Log in</a></p>
+      </div>
+ 
 
-<li><p>Password:</p>
-<p><input type="password" name="password"  value="" ng-model="user.password" size="50" /></p></li>
-<li>
-<p>Password Confirm:</p>
-<p><input type="password" name="passconf"  value="" ng-model="user.passconf" size="50" /></p></li>
-<li>
-  <a href="index.html" ng-click="signUp(user)">Sign up</a>
-      or <a href="#" ng-click='scenario="Log in"'>Log in</a>
 </li></ul>
 </form>
 
     
     <form ng-show="scenario == 'Log in'">
-      <h2>Log in</h2>
-      Username: <input type="text" ng-model="user.username" /><br />
-      Password: <input type="password" ng-model="user.password" /><br />
-     <a ng-click="logIn(user)"  href="index.html"> Log in</a>
-      or <a href="#" ng-click='scenario="Sign up"'>Sign up</a>
+      Username: <input type="text" ng-model="user.username" class="input" /><br />
+      Password: <input type="password" ng-model="user.password" class="input" /><br />
+     <a ng-click="logIn(user)" class="sign" href="#"> Log in</a>
+      or <a href="#" class="sign" ng-click='scenario="Sign up"'>Sign up</a>
     </form>
   </div>
 			
-			<div ng-show="currentUser">
+			<div ng-show="currentUser" style="text-align:center;">
     <h1>Welcome {{currentUser.get('username')}}</h1>
-    <p> You have been successfully logged in</p>
-    <button ng-click="logOut(user)">Log out</button>
+    <p> You have been successfully logged in<br/>Let's start shopping</p>
+    <a href="#" class="sign" ng-click="logOut(user)">Log out</a>
   </div>					</div>
 							</div>
 						</div>
 					</div>
 				
 					<!-- morph-button -->
+			<div id="cd-nav">
+		<a href="#0" class="cd-nav-trigger"><span></span></a>
+       <div class="row">
+      
+          <div id="cd-logo"><a href="#0"><img src="img/logo.png" style="float:left;" class="nav" height="80px" width="110px"alt="Logo"></a></div>
+</div>
+		<div id="cd-main-nav">
+			<ul>
+				<li><a class="nav" href="#0">Body</a></li>
+				<li><a class="nav" href="#0">Face</a></li>
+				<li><a class="nav" href="#0">Hair</a></li>
+				<li><a class="nav" href="#0">Blog</a></li>
+   			</ul>
+  		</div>
+	</div>
+	</div>
+	
+	
 	<header class="codrops-header">
 	<div style="position:absolute;padding-left:67px;">
 				<h1><img src="img/title.png" height="110px"width="270px;"><span style="font-size:25px;">PURE.SIMPLE.</span></h1>
@@ -107,7 +118,7 @@
 height: 0;
 border-style: solid;
 border-width:  250px 200px 0 200px;
-border-color: rgba(0,0,0,0.3) transparent transparent;position:relative;
+border-color: rgba(24,75,86,0.3) transparent transparent;position:relative;
 "></div> 
 			<!-- the transparent triangle   -->
 			</header>
@@ -138,6 +149,7 @@ border-color: rgba(0,0,0,0.3) transparent transparent;position:relative;
      var user = new Parse.User();
 user.set("username", form.username);
 user.set("email", form.email);
+user.set("phone", form.phone);
 user.set("password", form.password);
 user.set("confirm", form.passconf);
 
@@ -173,11 +185,9 @@ user.set("confirm", form.passconf);
 
 </script>
 <script type="text/javascript">
-
-
+Parse.initialize("enNfvaZh8DCXVXxhnJKTSI3pj8P4rILSGHnlmX2w", "3iCBpsYvGi3SYKI8XyBOUMkzOw7SmYwPN8S4GhwX");
   
 // other fields can be set just like with Parse.Object
-
   
 user.signUp(null, {
   success: function(user) {
