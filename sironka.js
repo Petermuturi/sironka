@@ -5,7 +5,7 @@ function validation_for_signup()
                 var check_username = /^[a-zA-Z0-9_]{3,16}$/;
                 var check_name = /^[a-zA-Z]{3,16}$/;
                 var check_phone = /^[0-9]{3,16}$/;
-                                if(document.signup.username.value=="")
+                                if(document.signup.username.value==="")
                                 {
                                                 alert("please enter username");
                                                 document.signup.username.focus();
@@ -17,7 +17,7 @@ function validation_for_signup()
                                                 document.signup.username.focus();
                                                 return false;
                                 }
-                                if(document.signup.email.value=="")
+                                if(document.signup.email.value==="")
                                 {
                                                 alert("please enter email");
                                                 document.signup.email.focus();
@@ -29,7 +29,7 @@ function validation_for_signup()
                                                 document.signup.email.focus();
                                                 return false;
                                 }
-                                if(document.signup.password.value=='')
+                                if(document.signup.password.value==='')
                                 {
                                                 alert("Please enter Password.");
                                                 document.signup.password.focus();
@@ -41,13 +41,13 @@ function validation_for_signup()
                                                 document.signup.password.focus();
                                                 return false;
                                 }
-                                if(document.signup.passconf.value=='')
+                                if(document.signup.passconf.value==='')
                                 {
                                                 alert("Please confirm Password.");
                                                 document.signup.passconf.focus();
                                                 return false;
                                 }
-                                else if(document.signup.password.value!=document.signup.passconf.value)
+                                else if(document.signup.password.value!==document.signup.passconf.value)
                                 {
                                                 alert("Password does not match.");
                                                 document.signup.password.focus();

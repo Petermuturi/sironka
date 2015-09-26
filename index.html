@@ -23,7 +23,7 @@
 		<!-- morphine links -->
 	<script src="js/modernizrln.js"></script> <!-- Modernizr -->
 		<script src="js/modernizr.customslide.js"></script>
-		<script type="text/javascript" src="sironka.js"></script>
+		 <script type="text/javascript" src="sironka.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
@@ -48,26 +48,14 @@
 <ul style="padding-top:90px;">
 
  Email: <input style="color: #4F002F;" id="email" type="email" class="validate" name="email"  value="" ng-model="user.email" size="50">
-     
-     <div class="row">
-        <div class="input-field col s6"> 
+    
 Username: <input style="color: #4F002F;" id="username" type="text" class="validate" name="username" value="" ng-model="user.username" size="50" >
-    </div>
- 
-    <div class="input-field col s6">      
+     
  Phone number: <input style="color: #4F002F;" id="phone" type="text" class="validate" name="phone"  value="" ng-model="user.phone" size="50">     
-  </div>
-  </div>
-        <div class="row">
-        <div class="input-field col s6">
+ 
  Password:<input style="color: #4F002F;" id="password" type="password" class="validate" name="password"  value="" ng-model="user.password" size="50">
          
-        </div>
-        <div class="input-field col s6">
-Confirm Password: <input style="color: #4F002F;" id="passconf" type="password" class="validate" name="passconf"  value="" ng-model="user.passconf" size="50">
-         
-        </div>
-        </div>
+     
           <p style="font-size:11px;"><a  href="#" class="sign" ng-click="signUp(user)">Sign up</a>
       or <a href="#" class="sign" ng-click='scenario="Log in"'>Log in</a></p>
      
@@ -154,7 +142,10 @@ Etiam rutrum maximus nulla id luctus.</p>
 	<p class="bout">WHY SIRONKA<i style="font-size:20px;" class="fa fa-question-circle"></i></p>
 	<p class="pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet<br/> commodo iaculis. Mauris sed mi at velit cursus iaculis sit amet vitae tortor.<br/> Etiam rutrum maximus nulla id luctus. Aliquam sit amet facilisis dui.<br/> In a mauris neque. Mauris tincidunt dictum justo id bibendum.<br/> Proin eu magna a erat fermentum euismod. </p>
 </div>		
+
 <script type="text/javascript">
+Parse.initialize("enNfvaZh8DCXVXxhnJKTSI3pj8P4rILSGHnlmX2w", "3iCBpsYvGi3SYKI8XyBOUMkzOw7SmYwPN8S4GhwX");
+  
     angular.module('AuthApp', [])
 .run(['$rootScope', function($scope) {
   $scope.scenario = 'Sign up';
@@ -166,8 +157,6 @@ user.set("username", form.username);
 user.set("email", form.email);
 user.set("phone", form.phone);
 user.set("password", form.password);
-user.set("confirm", form.passconf);
-
     
     user.signUp(null, {
       success: function(user) {
@@ -198,10 +187,7 @@ user.set("confirm", form.passconf);
   };
 }]);
 
-</script>
-<script type="text/javascript">
-Parse.initialize("enNfvaZh8DCXVXxhnJKTSI3pj8P4rILSGHnlmX2w", "3iCBpsYvGi3SYKI8XyBOUMkzOw7SmYwPN8S4GhwX");
-  
+
 // other fields can be set just like with Parse.Object
   
 user.signUp(null, {
