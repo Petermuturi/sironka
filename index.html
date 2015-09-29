@@ -143,63 +143,7 @@ Etiam rutrum maximus nulla id luctus.</p>
 	<p class="pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet<br/> commodo iaculis. Mauris sed mi at velit cursus iaculis sit amet vitae tortor.<br/> Etiam rutrum maximus nulla id luctus. Aliquam sit amet facilisis dui.<br/> In a mauris neque. Mauris tincidunt dictum justo id bibendum.<br/> Proin eu magna a erat fermentum euismod. </p>
 </div>		
 
-<script type="text/javascript">
-Parse.initialize("enNfvaZh8DCXVXxhnJKTSI3pj8P4rILSGHnlmX2w", "3iCBpsYvGi3SYKI8XyBOUMkzOw7SmYwPN8S4GhwX");
-  
-    angular.module('AuthApp', [])
-.run(['$rootScope', function($scope) {
-  $scope.scenario = 'Sign up';
-  $scope.currentUser = Parse.User.current();
-  
-  $scope.signUp = function(form) {
-     var user = new Parse.User();
-user.set("username", form.username);
-user.set("email", form.email);
-user.set("phone", form.phone);
-user.set("password", form.password);
-    
-    user.signUp(null, {
-      success: function(user) {
-        $scope.currentUser = user;
-        $scope.$apply();
-      },
-      error: function(user, error) {
-        alert("Unable to sign up:  " + error.code + " " + error.message);
-      }
-    });    
-  };
-  
-  $scope.logIn = function(form) {
-    Parse.User.logIn(form.username, form.password, {
-      success: function(user) {
-        $scope.currentUser = user;
-        $scope.$apply();
-      },
-      error: function(user, error) {
-        alert("Unable to log in: " + error.code + " " + error.message);
-      }
-    });
-  };
-  
-  $scope.logOut = function(form) {
-    Parse.User.logOut();
-    $scope.currentUser = null;
-  };
-}]);
-
-
-// other fields can be set just like with Parse.Object
-  
-user.signUp(null, {
-  success: function(user) {
-    // Hooray! Let them use the app now.
-  },
-  error: function(user, error) {
-    // Show the error message somewhere and let the user try again.
-    alert("Error: " + error.code + " " + error.message);
-  }
-});
-  </script>
+<script src="sironka.js"></script>
 		<script src="js/jquery-2.1.1ln.js"></script>
         <script src="js/mainln.js"></script> <!-- Resource jQuery -->
 		<script src="js/classieslide.js"></script>
