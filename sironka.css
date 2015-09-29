@@ -24,3 +24,8 @@
  padding-bottom: 40px;
 
 }
+.product{
+	background-image: url(img/3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
