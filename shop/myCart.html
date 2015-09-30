@@ -10,6 +10,17 @@
 	<!--[if IE 7]><link rel="stylesheet" href="ie7.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
 	
 	<!--Include the SimpleCart(js) script-->
+	<link rel="icon" type="image/png" href="../img/icon.png" />
+		<link rel="stylesheet" type="text/css" href="../sironka.css"/>
+		 <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+	<!--[if lte IE 6]><link rel="stylesheet" href="ie6.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
+	<!--[if IE 7]><link rel="stylesheet" href="ie7.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
+	<!--Include the SimpleCart(js) script-->
+	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="javascripts/simpleCart.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="../css/resetln.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="../css/styleln.css"> <!-- Resource style -->
 	<script src="javascripts/simpleCart.js" type="text/javascript" charset="utf-8"></script>
 	
 	<!--Make a new cart instance with your paypal login email-->
@@ -96,43 +107,44 @@
 	
 </head>
 
-<body>
+<body style="background-color:white;">
 		<div id="content">
 			
-			<div id="sidebar" style="margin-top:20px">
-				<h2>You Might Also Like</h2>
+			<div id="sidebar" style="margin-top:80px">
+				<h2 class="bl">You Might Also Like</h2>
 				<div class="alsoContainer">
 					<div class="alsoImage">
-						<img src="images/thumbs/blackGold.jpg" alt="" />
+						<img src="images/products/hair.png" alt="" class="like" />
 					</div>
 					<div class="alsoInfo">
-						Black Gold<br/>
-						<a href="#" onclick="simpleCart.add('name=Black Gold','price=58','image=images/thumbs/blackGold.jpg');return false;">add to cart</a>
+						Black Hair<br/>
+						<a href="#" onclick="simpleCart.add('name=Black Hair','price=58','image=images/thumbs/hair.jpg');return false;" style="color: #4F002F;" class="full">add to cart</a>
 					</div>
-					<div class="alsoPrice">$58</div>
+					<div class="alsoPrice price">$58.05</div>
 				</div>
 				
 				<div class="alsoContainer">
 					<div class="alsoImage">
-						<img src="images/thumbs/goldShoe.jpg" alt="" />
+						<img src="images/products/body2.png" alt="" class="like" />
 					</div>
 					<div class="alsoInfo">
-						Gold Shoe<br/>
-						<a href="#" onclick="simpleCart.add('name=Gold Shoe','price=70','image=images/thumbs/goldShoe.jpg');return false;">add to cart</a>
+						Silk Butter<br/>
+						<a href="#" onclick="simpleCart.add('name=Silk Butter','price=70','image=images/thumbs/body2.jpg');return false;"style="color: #4F002F;" class="full">add to cart</a>
 					</div>
-					<div class="alsoPrice">$58</div>
+					<div class="alsoPrice price">$59.50</div>
 				</div>
 				
 				<div class="alsoContainer">
 					<div class="alsoImage">
-						<img src="images/thumbs/greenStripe.jpg" alt="" />
+						<img src="images/products/hair.png" alt="" class="like" />
 					</div>
 					<div class="alsoInfo">
-						Green Stripe<br/>
-						<a href="#" onclick="simpleCart.add('name=Green Stripe','price=90','image=images/thumbs/greenStripe.jpg');return false;">add to cart</a>
+						Silk Hair<br/>
+						<a href="#" onclick="simpleCart.add('name=Silk Hair','price=90','image=images/thumbs/hair.jpg');return false;"style="color: #4F002F;" class="full">add to cart</a>
 					</div>
-					<div class="alsoPrice">$58</div>
+					<div class="alsoPrice price">$56.03</div>
 				</div>	
+				
 				
 				
 				
@@ -148,7 +160,7 @@
 			</div>
 			<div id="left">
 			<!--Add a Div with the class "simpleCart_items" to show your shopping cart area.-->
-				<div class="simpleCart_items" >
+				<div class="simpleCart_items">
 				</div>
 				
 				<div class="checkoutEmptyLinks">

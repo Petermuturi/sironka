@@ -15,6 +15,12 @@
 	<!--Include the SimpleCart(js) script-->
 	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script src="javascripts/simpleCart.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="../css/resetln.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="../css/styleln.css"> <!-- Resource style -->
+	<!-- morphine links -->
+	
+		
+		
 	
 	<!--Make a new cart instance with your paypal login email-->
 	<script type="text/javascript">
@@ -22,14 +28,32 @@
 	</script>	
 </head>
 
-<body>
-<div class="top" style="background-image:url(../img/2.jpg);">
+<body style="background-color:white;">
+<div  style="background-image:url(../img/2.jpg);background-repeat:no-repeat;background-size:cover;">
+<div id="cd-nav">
+		<a href="#0" class="cd-nav-trigger"><span></span></a>
+       <div class="row">
+      
+          <div id="cd-logo"><a href="#0"><img src="../img/logo.png" style="float:left;" class="nav" height="80px" width="110px"alt="Logo"></a></div>
+</div>
+		<div id="cd-main-nav">
+			<ul>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="../index.html">HOME</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="../shop/face.html">FACE</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="../shop/hair.html">HAIR</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="#">BLOG</a></li>
+   			</ul>
+  		</div>
+	</div>
+	<div class="top">
 <h1 class="h1"><img src="../img/title.png" height="110px"width="270px;"></h1>
      <div class="triangle"></div> 
+     </div>
 </div>
 		<div id="content">
 			<div id="header">
-				<h2 class="bl">Body Products</h2>
+				<h2 class="bl" style="font-size:30px;font-weight:100;">BODY PRODUCTS</h2>
+				<hr/>
 			</div>			
 			<!--Here's the Catalog Items. You can make anything into a product, 
 				just copy and paste the onclick attribute from one of the products 
@@ -37,49 +61,56 @@
 			-->
 			<ul id="catalog">
 				
-				<li>
-					<img class="imgs" src="images/products/img.jpg" alt="Red Shoe" />
-					<span class="price prc">$50.32</span><b class="bl">Red Shoe<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Red Shoe','price=50','image=images/thumbs/redShoe.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
+				<li class="bd">
+					<a href="#"><img class="imgs" src="images/products/body.png" alt="Chocolate Butter" /></a>
+					<hr style="color: #B8B8B8 ;" />
+					<span class="price prc">$50.32</span><b class="bl">Chocolate Butter<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Chocolate Butter','price=50','image=images/thumbs/body.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img class="imgs" src="images/products/img.jpg" alt="Gold Shoe" />
-					<span class="price prc">$70.21</span><b class="bl">Gold Shoe<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Gold Shoe','price=70','image=images/thumbs/goldShoe.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
+				<li class="bd">
+					<a href="#"><img class="imgs" src="images/products/body2.png" alt="Milk Butter" /></a>
+					<hr style="color: #B8B8B8 ;" />
+					<span class="price prc">$70.21</span><b class="bl">Milk Butter<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Milk Butter','price=70','image=images/thumbs/body2.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img class="imgs" src="images/products/whiteSlipon.jpg" alt="White Slip-on" />
-					<span class="price prc">$45.00</span><b class="bl">White Slip-on<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=White Slip-on','price=45','image=images/thumbs/whiteSlipon.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
+				<li class="bd">
+					<a href="#"><img class="imgs" src="images/products/body2.png" alt="Silver Butter" /></a>
+					<hr style="color: #B8B8B8 ;" />
+					<span class="price prc">$45.00</span><b class="bl">Silver Butter<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Silver Butter','price=45','image=images/thumbs/body2.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img class="imgs" src="images/products/blackGold.jpg" alt="Black Gold" />
-					<span class="price prc">$58.99</span><b class="bl">Black Gold<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Black Gold','price=58','image=images/thumbs/blackGold.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
+				<li class="bd">
+					<a href="#"><img class="imgs" src="images/products/body.png" alt="Golden Butter" /></a>
+					<hr style="color: #B8B8B8 ;" />
+					<span class="price prc">$58.99</span><b class="bl">Golden Butter<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Golden Butter','price=58','image=images/thumbs/body.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img class="imgs" src="images/products/greenStripe.jpg" alt="Green Stripe" />
-					<span class="price prc">$90.00</span><b class="bl">Green Stripe<br/><a href="#"style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Green Stripe','price=90','image=images/thumbs/greenStripe.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
+				<li class="bd">
+					<a href="#"><img class="imgs" src="images/products/body.png" alt="Regular Butter" /></a>
+					<hr style="color: #B8B8B8 ;" />
+					<span class="price prc">$90.00</span><b class="bl">Regular Butter<br/><a href="#"style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Regular Butter','price=90','image=images/thumbs/body.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img class="imgs" src="images/products/redStripe.jpg" alt="Red Stripe" />
-					<span class="price prc">$59.50</span><b class="bl">Red Stripe<br/><a href="#"style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Red Stripe','price=59','image=images/thumbs/redStripe.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
+				<li class="bd">
+					<a href="#"><img class="imgs" src="images/products/body2.png" alt="Silk Butter" /></a>
+					<hr style="color: #B8B8B8 ;" />
+					<span class="price prc">$59.50</span><b class="bl">Silk Butter<br/><a href="#"style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Silk Butter','price=59','image=images/thumbs/body2.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img class="imgs" src="images/products/whiteStripe.jpg" alt="White Stripe" />
-					<span class="price prc">$75.05</span><b class="bl">White Stripe<br/><a href="#"style="color: #4F002F;" class="full" onclick="simpleCart.add('name=White Stripe','price=75','image=images/thumbs/whiteStripe.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
+				<li class="bd">
+					<a href="#"><img class="imgs" src="images/products/body2.png" alt="Honey Scented" /></a>
+					<hr style="color: #B8B8B8 ;" />
+					<span class="price prc">$75.05</span><b class="bl">Honey Scented<br/><a href="#"style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Honey Scented','price=75','image=images/thumbs/body.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img class="imgs" src="images/products/creamSlipon.jpg" alt="Cream Slip-on" />
-					<span class="price prc">$45.02</span><b class="bl">Cream Slip-on<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Cream Slip-on','price=45','image=images/thumbs/creamSlipon.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
+				<li class="bd">
+					<a href="#"><img class="imgs" src="images/products/body.png" alt="Cream Butter" /></a>
+					<hr style="color: #B8B8B8 ;" />
+					<span class="price prc">$45.02</span><b class="bl">Cream Butter<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Cream Butter','price=45','image=images/thumbs/body2.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 
 			</ul>
 			<!--/ Catalog-->
-			
 			
 			<div id="sidebar" class="crt">
                  <img src="../img/logo2.png" height="50px" width="60px;" style="float:right;">
@@ -89,17 +120,62 @@
 				<!--Add a Div with the class "simpleCart_items" to show your shopping cart area.-->
 				<div class="simpleCart_items" >
 				</div>
-				
+				<hr/>
 				
 				<!--Here's the Links to Checkout and Empty Cart-->
 				
 				<input class="simpleCart_empty btns fa fa-trash-o" type="button" value="Empty cart">
 				<input type="button" onclick="myFunction()" value="Checkout" style="float:right;" class="simpleCart_checkout btns">
-				
 			
 			</div>	
+
+			<div>
+			<div id="sidebar" style="margin-top:80px">
+				<h2 class="bl">You Might Also Like</h2>
+				<div class="alsoContainer">
+					<div class="alsoImage">
+						<img src="images/products/hair.png" alt="" class="like" />
+					</div>
+					<div class="alsoInfo">
+						Black Hair<br/>
+						<a href="#" onclick="simpleCart.add('name=Black Hair','price=58','image=images/thumbs/hair.jpg');return false;" style="color: #4F002F;" class="full">add to cart</a>
+					</div>
+					<div class="alsoPrice price">$58.05</div>
+				</div>
+				
+				<div class="alsoContainer">
+					<div class="alsoImage">
+						<img src="images/products/hair2.png" alt="" class="like" />
+					</div>
+					<div class="alsoInfo">
+						Gold Silk<br/>
+						<a href="#" onclick="simpleCart.add('name=Gold Silk','price=70','image=images/thumbs/hair2.jpg');return false;"style="color: #4F002F;" class="full">add to cart</a>
+					</div>
+					<div class="alsoPrice price">$43.12</div>
+				</div>
+				
+				<div class="alsoContainer">
+					<div class="alsoImage">
+						<img src="images/products/hair.png" alt="" class="like" />
+					</div>
+					<div class="alsoInfo">
+						Silk Hair<br/>
+						<a href="#" onclick="simpleCart.add('name=Silk Hair','price=90','image=images/thumbs/hair.jpg');return false;"style="color: #4F002F;" class="full">add to cart</a>
+					</div>
+					<div class="alsoPrice price">$56.03</div>
+				</div>	
+				
+				
+				
+				
+			<!--End #sidebar-->	
+			</div>
+			
+			</div>
 		<!--End #content-->		
 		</div>
+			<script src="../js/jquery-2.1.1ln.js"></script>
+        <script src="../js/mainln.js"></script> <!-- Resource jQuery -->
 		<script type="text/javascript" src="../sironka.js"></script>
 </body>
 </html>

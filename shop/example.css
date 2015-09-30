@@ -33,9 +33,9 @@ body{
 	font:bold 12px Helvetica,Arial,sans-serif;
 }
 #content{
-	background:url(images/bg_content.png);
-	width:1044px;
-	height:562px;
+	
+	width: 1200px;
+	
 	margin:90px auto 20px auto;
 }
 #header{
@@ -45,7 +45,14 @@ body{
 	width:770px;
 	float:left;
 }
-
+.bd{
+	border:1px solid  #B8B8B8;
+	padding: 10px;
+}
+.bd:hover{
+	background-color: rgba(192,209,213,0.5);
+	opacity: 0.1px;
+}
 h2{
 	font-size:22px;
 	color:#429132;
@@ -65,7 +72,7 @@ h2{
 }
 .price{
 	display:block;
-	float:left;
+	float:right;
 	width:48px;
 	height:21px;
 	line-height:20px;	
@@ -74,8 +81,12 @@ h2{
 	font-weight:lighter;
 }
 .imgs{
-	height: 250px;
-	width: 300px;
+	height: 280px;
+	width: 310px;
+}
+.imgs:hover{
+  opacity: 0.5;
+  background-color: rgba(86,24,40,0.8);
 }
 b{
 	float:left;
@@ -89,10 +100,15 @@ b a{
 #sidebar{
 	float:right;
 	margin-right:5px;
-	width:248px;
+	width:300px;
 	margin-top:-70px;
 	
 }
+.like{
+	width: 250px;
+	height: 200px;
+}
+
 #sidebar a{
 	font-size:11px;
 	color:#000;
@@ -144,8 +160,9 @@ my cart page
 	color:#c23f26;
 }
 .alsoPrice{
-	color:#418932;
-	font-size:13px;
+	padding-left: 18px;
+	text-align: center;
+	font-size:14px;
 	padding-top:5px;
 }
 .checkoutEmptyLinks{
