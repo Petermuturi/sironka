@@ -34,9 +34,9 @@
 <body ng-app="AuthApp" style="background-color: white ; ">
 		<div class="container">
 		<div class="codrops-top clearfix">
-			<div style="float:right; padding-left:30px; padding-top:20px;" class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
-	 <button  style="color:#B8B8B8;background:none; font-size:11px; font-weight:400;" s class="nav" type="button">
-	 SIGN
+			<div style="float:right; padding-left:20px; padding-top:22px;" class="morph-button morph-button-modal morph-button-modal-3 morph-button-fixed">
+	 <button  style="background:none; font-size:12px; font-weight:400;" class="nav" type="button">
+	 SIGN<i class="fa fa-sign-in"></i>
 </button>
 		<div  class="morph-content" style="background-color:#E8E8E8;color: #0B4C5F;">
 		<span class="icon icon-close">Close the dialog</span>
@@ -87,14 +87,14 @@ Username: <input style="color: #4F002F;" id="username" type="text" class="valida
 		<a href="#0" class="cd-nav-trigger"><span></span></a>
        <div class="row">
       
-          <div id="cd-logo"><a href="#0"><img src="img/logo.png" style="float:left;" class="nav" height="80px" width="110px"alt="Logo"></a></div>
+          <div id="cd-logo"><a href="#0"><img src="img/logo.png" style="float:left;" class="nav" height="100px" width="140px"alt="Logo"></a></div>
 </div>
 		<div id="cd-main-nav">
 			<ul>
-				<li><a class="nav"  style="color:#B8B8B8;font-size:14px;font-weight:300;" href="shop/body.html">Body</a></li>
-				<li><a class="nav"  style="color:#B8B8B8;font-size:14px;font-weight:300;" href="shop/face.html">Face</a></li>
-				<li><a class="nav"  style="color:#B8B8B8;font-size:14px;font-weight:300;" href="shop/hair.html">Hair</a></li>
-				<li><a class="nav"  style="color:#B8B8B8;font-size:14px;font-weight:300;" href="#">Blog</a></li>
+				<li><a class="nav"  style="font-size:14px;font-weight:300;" href="shop/body.html">Body</a></li>
+				<li><a class="nav"  style="font-size:14px;font-weight:300;" href="shop/face.html">Face</a></li>
+				<li><a class="nav"  style="font-size:14px;font-weight:300;" href="shop/hair.html">Hair</a></li>
+				<li><a class="nav"  style="font-size:14px;font-weight:300;" href="#">Blog</a></li>
    			</ul>
   		</div>
 	</div>
@@ -105,7 +105,7 @@ Username: <input style="color: #4F002F;" id="username" type="text" class="valida
 	<div style="position:absolute;padding-left:67px;">
 				<h1><img src="img/title2.png" height="110px"width="270px;"><span style="font-size:25px;">PURE.SIMPLE.</span></h1>
 	</div>		
-	       <div style="width: 0;
+	      <div style="width: 0;
 height: 0;
 border-style: solid;
 border-width:  250px 200px 0 200px;
@@ -141,8 +141,49 @@ Etiam rutrum maximus nulla id luctus.</p>
 <div>
 	<p class="bout">WHY SIRONKA<i style="font-size:20px;" class="fa fa-question-circle"></i></p>
 	<p class="pp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet<br/> commodo iaculis. Mauris sed mi at velit cursus iaculis sit amet vitae tortor.<br/> Etiam rutrum maximus nulla id luctus. Aliquam sit amet facilisis dui.<br/> In a mauris neque. Mauris tincidunt dictum justo id bibendum.<br/> Proin eu magna a erat fermentum euismod. </p>
-</div>		
-
+</div>	
+ <div class="row" style="padding-top:65px;"id="contact">
+   <div class="col s2" style="color:white;">.</div>
+   <div class="col s6">
+      <form action="//formspree.io/pmuturi65@gmail.com"
+          method="POST"  >
+          <p style="font-size:20px; text-align:center;">CONTACT US NOW.</p>
+          <div class="input-field col s12">
+          <input id="first_name" style="color:#4F002F" type="text" name="name" class="validate">
+          <label style="color: #0B4C5F;" for="first_name"><i class="fa fa-smile-o"></i>
+Name</label>
+        </div>
+     <div class="input-field col s12">
+          <input id="email" style="color:#4F002F" type="email" name="email" class="validate">
+          <label style="color: #0B4C5F;" for="email"><i class="fa fa-envelope-o"></i>
+Email</label>
+        </div>
+          <div class="input-field col s12">
+          <textarea id="textarea" style="color:#4F002F" type="textarea" name="message" class="materialize-textarea" length="100"></textarea>
+          <label style="color: #0B4C5F;" for="textarea"><i class="fa fa-pencil"></i>
+Message</label>
+        </div>
+      <input class="btns btn-default begin" type="submit" value="SEND" style="padding:left:14px;padding-right:14px;padding-top:10px;padding-bottom:10px;border-radius:0px;text-align:center;" />
+      <input type="hidden" name="_next" value="thanks.html" />
+      <input type="hidden" name="_subject" value="Message from your website" />
+      </div>
+      <div style="text-align:center;padding-top:50px;">
+      	<img src="img/logo2.png" height="380px" width="420px;">
+      </div>
+</div>	
+<div class="foot">
+<div class="row">
+<div class="col s2" style="padding-top:15px;"><span ><a style="text-align:center;" href="#"><img src="img/title2.png" height="80px;" width="180px"></a></span></div>
+	<div class="col s6" style="padding-bottom:25px;padding-top:40px;">
+		<span>&#169; Copyright Sironka 2015</span>
+		<p style="float:right;font-size:20px;">
+		<a href="#" target="ig" title="Instagram"><i class="fa fa-instagram"></i></a> | 
+		<a href="#" target="fb" title="Facebook"><i class="fa fa-facebook-official"></i></a> | 
+		<a href="#" target="tweet" title="Twitter"><i class="fa fa-twitter"></i></a> | 
+		<a href="#" target="pin" title="Pinterest"><i class="fa fa-pinterest-square"></i></a></p>
+		</div>
+	</div>
+</div>
 <script src="ig/sironka.js"></script>
 		<script src="js/jquery-2.1.1ln.js"></script>
         <script src="js/mainln.js"></script> <!-- Resource jQuery -->

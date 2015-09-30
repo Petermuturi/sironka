@@ -82,6 +82,12 @@ position:relative;
 	color:#0B4C5F;
 }
 
+.foot{
+	background-color: #0B4C5F;
+	color: #E8E8E8;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 @media screen and (max-width: 40em) {
 
 	.top{
