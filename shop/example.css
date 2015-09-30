@@ -9,23 +9,7 @@ Just makes the rest of the site look
 pretty
 *****************************************/
 
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
-body { line-height: 1;}
-ol, ul { list-style: none;}
-blockquote, q { quotes: none;}
-:focus { outline: 0;}
-ins { text-decoration: none;}
-del { text-decoration: line-through;}
-table { border-collapse: collapse; border-spacing: 0;}
+ 	
 
 
 
@@ -33,9 +17,7 @@ body{
 	font:bold 12px Helvetica,Arial,sans-serif;
 }
 #content{
-	
 	width: 1200px;
-	
 	margin:90px auto 20px auto;
 }
 #header{
@@ -50,7 +32,15 @@ body{
 	padding: 10px;
 }
 .bd:hover{
-	background-color: rgba(192,209,213,0.5);
+	background-color: rgba(86,24,40,0.1);
+	opacity: 0.1px;
+}
+.bds{
+	border:1px solid  #B8B8B8;
+	padding: 10px;
+}
+.bds:hover{
+	background-color: rgba(192,209,213,0.3);
 	opacity: 0.1px;
 }
 h2{
@@ -86,7 +76,7 @@ h2{
 }
 .imgs:hover{
   opacity: 0.5;
-  background-color: rgba(86,24,40,0.8);
+  background-color: rgba(86,24,40,1);
 }
 b{
 	float:left;
@@ -97,21 +87,24 @@ b a{
 	font-size:12px;
 	color:#c23f26;
 }
+
 #sidebar{
 	float:right;
 	margin-right:5px;
 	width:300px;
 	margin-top:-70px;
-	
+	color: #0B4C5F;
 }
 .like{
 	width: 250px;
 	height: 200px;
 }
-
+#left .simpleCart_items{
+	width: 700px;
+	padding-left: 14px;
+}
 #sidebar a{
 	font-size:11px;
-	color:#000;
 }
 #sidebar a.simpleCart_checkout,
 .checkoutEmptyLinks a.simpleCart_checkout{
@@ -148,6 +141,7 @@ my cart page
 .alsoImage,
 .alsoPrice{
 	float:left;
+	color: #0B4C5F;
 }
 .alsoImage{
 	margin-right:8px;
@@ -162,8 +156,8 @@ my cart page
 .alsoPrice{
 	padding-left: 18px;
 	text-align: center;
-	font-size:14px;
-	padding-top:5px;
+	font-size:12px;
+  font-family: Arial;
 }
 .checkoutEmptyLinks{
 	float:left;

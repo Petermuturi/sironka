@@ -1,28 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html  xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-	<title>simpleCart (js) Demo</title>
-	<link rel="stylesheet" href="example.css" type="text/css" media="screen" charset="utf-8" />
+	<title>hair</title>
+	<link rel="icon" type="image/png" href="../img/icon.png" />
+		<link rel="stylesheet" type="text/css" href="../sironka.css"/>
+		 <link rel="stylesheet" type="text/css" href="../materialize/css/materialize.min.css"/>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="example.css" type="text/css" media="screen" charset="utf-8" />
 	<!--[if lte IE 6]><link rel="stylesheet" href="ie6.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
 	<!--[if IE 7]><link rel="stylesheet" href="ie7.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
 	<!--Include the SimpleCart(js) script-->
+	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script src="javascripts/simpleCart.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="../css/resetln.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="../css/styleln.css"> <!-- Resource style -->
+	<!-- morphine links -->
+	
+		
+		
 	
 	<!--Make a new cart instance with your paypal login email-->
 	<script type="text/javascript">
 		simpleCart = new cart("orders@sironka.co.ke");
-	</script>
-	
-	<!--CSS for the Cart. Customize anything you damn well please.
-		Use Firebug or Webkit's Element Inspector to get a more 
-		indepth idea of what simpleCart Generates.
-	-->
-	<style>
-		.cartHeaders,.totalRow{display:none;}
+	</script>	
+</head>
+<style type="text/css">
+	.cartHeaders,.totalRow{display:none;}
 		.simpleCart_items{
 			overflow-y:auto;
 			overflow-x:hidden;
@@ -36,10 +42,11 @@
 			padding:11px 0;
 			font-size:11px;
 		}
-		.itemImage{
+		 .itemImage{
 			float:left;
 			width:60px;
 		}
+
 		.itemName{
 			float:left;
 			width:85px;
@@ -66,97 +73,151 @@
 			color:#c23f26;
 			margin-top:-6px
 		}
-	</style>
-	
-	
-	
-</head>
-
-<body>
-	<div id="topFrame"><img src="images/greenLogo.gif" alt="simpleCart(js)" style="vertical-align:middle;margin:-1px 20px 0 0" /> <a href="#">Docs</a> &nbsp;&nbsp;&nbsp;<a href="#">Download</a></div>
+</style>
+<body style="background-color:white;">
+<div  style="background-image:url(../img/3.jpg);background-repeat:no-repeat;background-size:cover;">
+<div id="cd-nav">
+		<a href="#0" class="cd-nav-trigger"><span></span></a>
+       <div class="row">
+      
+          <div id="cd-logo"><a href="#0"><img src="../img/logo2.png" style="float:left;" class="nav" height="100px" width="140px"alt="Logo"></a></div>
+</div>
+		<div id="cd-main-nav">
+			<ul>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="../index.html">HOME</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="../shop/face.html">FACE</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="../shop/body.html">BODY</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="#">BLOG</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" alt="CART" href="../shop/myCart.html">CART</a></li>
+   			</ul>
+  		</div>
+	</div>
+	<div class="top">
+<h1 class="h1"><img src="../img/title.png" height="110px"width="270px;"></h1>
+     <div class="triangle"></div> 
+     </div>
+</div>
 		<div id="content">
 			<div id="header">
-				<h1>simpleCart (js)</h1>
-			</div>
-			
+				<h2 class="bl" style="font-size:30px;font-weight:100;">HAIR PRODUCTS</h2>
+				<hr style="color: rgba(192,209,213,0.8);" />
+			</div>			
 			<!--Here's the Catalog Items. You can make anything into a product, 
 				just copy and paste the onclick attribute from one of the products 
 				below.
 			-->
 			<ul id="catalog">
 				
-				<li>
-					<img src="images/products/redShoe.jpg" alt="Red Shoe" />
-					<span class="price">$50</span><b>Red Shoe<br/><a href="#" onclick="simpleCart.add('name=Red Shoe','price=50','image=images/thumbs/redShoe.jpg');return false;"> add to cart</a></b>
+				<li class="bds">
+					<a href="#"><img class="imgs" src="images/products/hair.png" alt="Chocolate Butter" /></a>
+					<hr style="color: rgba(192,209,213,0.5);" />
+					<span class="price prc">$50.32</span><b class="bl">Chocolate Butter<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Chocolate Butter','price=50','image=images/thumbs/hair.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img src="images/products/goldShoe.jpg" alt="Gold Shoe" />
-					<span class="price">$70</span><b>Gold Shoe<br/><a href="#" onclick="simpleCart.add('name=Gold Shoe','price=70','image=images/thumbs/goldShoe.jpg');return false;"> add to cart</a></b>
+				<li class="bds">
+					<a href="#"><img class="imgs" src="images/products/hair2.png" alt="Milk Butter" /></a>
+					<hr style="color: rgba(192,209,213,0.5);" />
+					<span class="price prc">$70.21</span><b class="bl">Milk Butter<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Milk Butter','price=70','image=images/thumbs/hair2.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img src="images/products/whiteSlipon.jpg" alt="White Slip-on" />
-					<span class="price">$45</span><b>White Slip-on<br/><a href="#" onclick="simpleCart.add('name=White Slip-on','price=45','image=images/thumbs/whiteSlipon.jpg');return false;"> add to cart</a></b>
+				<li class="bds">
+					<a href="#"><img class="imgs" src="images/products/hair2.png" alt="Silver Butter" /></a>
+					<hr style="color: rgba(192,209,213,0.5);" />
+					<span class="price prc">$45.00</span><b class="bl">Silver Butter<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Silver Butter','price=45','image=images/thumbs/hair2.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img src="images/products/blackGold.jpg" alt="Black Gold" />
-					<span class="price">$58</span><b>Black Gold<br/><a href="#" onclick="simpleCart.add('name=Black Gold','price=58','image=images/thumbs/blackGold.jpg');return false;"> add to cart</a></b>
+				<li class="bds">
+					<a href="#"><img class="imgs" src="images/products/hair.png" alt="Golden Butter" /></a>
+					<hr style="color: rgba(192,209,213,0.5);" />
+					<span class="price prc">$58.99</span><b class="bl">Golden Butter<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Golden Butter','price=58','image=images/thumbs/hair.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img src="images/products/greenStripe.jpg" alt="Green Stripe" />
-					<span class="price">$90</span><b>Green Stripe<br/><a href="#" onclick="simpleCart.add('name=Green Stripe','price=90','image=images/thumbs/greenStripe.jpg');return false;"> add to cart</a></b>
+				<li class="bds">
+					<a href="#"><img class="imgs" src="images/products/hair.png" alt="Regular Butter" /></a>
+					<hr style="color: rgba(192,209,213,0.5);" />
+					<span class="price prc">$90.00</span><b class="bl">Regular Butter<br/><a href="#"style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Regular Butter','price=90','image=images/thumbs/hair.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img src="images/products/redStripe.jpg" alt="Red Stripe" />
-					<span class="price">$59</span><b>Red Stripe<br/><a href="#" onclick="simpleCart.add('name=Red Stripe','price=59','image=images/thumbs/redStripe.jpg');return false;"> add to cart</a></b>
+				<li class="bds">
+					<a href="#"><img class="imgs" src="images/products/hair2.png" alt="Silk Butter" /></a>
+					<hr style="color: rgba(192,209,213,0.5);" />
+					<span class="price prc">$59.50</span><b class="bl">Silk Butter<br/><a href="#"style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Silk Butter','price=59','image=images/thumbs/hair2.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img src="images/products/whiteStripe.jpg" alt="White Stripe" />
-					<span class="price">$75</span><b>White Stripe<br/><a href="#" onclick="simpleCart.add('name=White Stripe','price=75','image=images/thumbs/whiteStripe.jpg');return false;"> add to cart</a></b>
+				<li class="bds">
+					<a href="#"><img class="imgs" src="images/products/hair2.png" alt="Honey Scented" /></a>
+					<hr style="color: rgba(192,209,213,0.5);" />
+					<span class="price prc">$75.05</span><b class="bl">Honey Scented<br/><a href="#"style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Honey Scented','price=75','image=images/thumbs/hair.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 				
-				<li>
-					<img src="images/products/creamSlipon.jpg" alt="Cream Slip-on" />
-					<span class="price">$45</span><b>Cream Slip-on<br/><a href="#" onclick="simpleCart.add('name=Cream Slip-on','price=45','image=images/thumbs/creamSlipon.jpg');return false;"> add to cart</a></b>
+				<li class="bds">
+					<a href="#"><img class="imgs" src="images/products/hair.png" alt="Cream Butter" /></a>
+					<hr style="color: rgba(192,209,213,0.5);" />
+					<span class="price prc">$45.02</span><b class="bl">Cream Butter<br/><a href="#" style="color: #4F002F;" class="full" onclick="simpleCart.add('name=Cream Butter','price=45','image=images/thumbs/hair2.jpg');return false;"> add to cart<i class="fa fa-cart-plus"></i></a></b>
 				</li>
 
 			</ul>
 			<!--/ Catalog-->
 			
-			
-			<div id="sidebar">
-				<h2>Your Cart</h2>
-				
-				
+			<div id="sidebar" class="crt">
+                 <img src="../img/logo2.png" height="50px" width="60px;" style="float:right;">
+				<h2 class="bl" style="font-weight:300;">Your Cart</h2>
+				<a href="myCart.html" style="color: #4F002F;" class="full">View Full Cart</a>
+				<hr style="color: rgba(192,209,213,0.5);" />
 				<!--Add a Div with the class "simpleCart_items" to show your shopping cart area.-->
 				<div class="simpleCart_items" >
 				</div>
-				
+				<hr style="color: rgba(192,209,213,0.5);" />
 				
 				<!--Here's the Links to Checkout and Empty Cart-->
-				<a href="#" class="simpleCart_empty">empty cart</a>
-				<a href="#" class="simpleCart_checkout">Checkout</a>
 				
+				<input class="simpleCart_empty btns fa fa-trash-o" style="font-size:12px;font-family:Arial;" type="button" value="Empty cart">
+				<input type="button" onclick="myFunction()" value="Checkout" style="float:right;font-size:12px;font-family:Arial;" class="simpleCart_checkout btns">
+			
+			</div>	
+
+			
+			<div id="sidebar" style="margin-top:80px;border-left:1px solid rgba(164,168,169,0.5);padding-left:20px;padding-bottom:30px;">
+				<h2 class="bl" style="font-weight:300;">You Might Also Like</h2>
+				<hr style="color: rgba(192,209,213,0.5);"/>
+				<div class="alsoContainer">
+					<div class="alsoImage">
+						<img src="images/products/body.png" alt="" class="like" />
+					</div>
+					<div class="alsoInfo">
+						Black Hair<br/>
+						<a href="#" onclick="simpleCart.add('name=Black Hair','price=58','image=images/thumbs/body.jpg');return false;" style="color: #4F002F;" class="full">add to cart<i class="fa fa-cart-plus"></i></a>
+					</div>
+					<div class="alsoPrice price">$58.05</div>
+				</div>
 				
+				<div class="alsoContainer">
+					<div class="alsoImage">
+						<img src="images/products/body2.png" alt="" class="like" />
+					</div>
+					<div class="alsoInfo">
+						Gold Silk<br/>
+						<a href="#" onclick="simpleCart.add('name=Gold Silk','price=70','image=images/thumbs/body2.jpg');return false;"style="color: #4F002F;" class="full">add to cart<i class="fa fa-cart-plus"></i></a>
+					</div>
+					<div class="alsoPrice price">$43.12</div>
+				</div>
 				
-				<!--Nothing below this has to do with simpleCart (js) functionality-->
-				<div id="downloadContainer">
-					<h3>Download</h3>
-					<a href="#"><img src="images/smallLogo.gif" alt="Download simpleCart(js)" id="smallLogo" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href="#">Version 1.0</a>&nbsp;&nbsp;<a href="#"><img src="images/arrow.gif" alt="Download simpleCart(js)"></a>
-				</div>	
+				<div class="alsoContainer">
+					<div class="alsoImage">
+						<img src="images/products/body.png" alt="" class="like" />
+					</div>
+					<div class="alsoInfo">
+						Regular Butter<br/>
+						<a href="#" onclick="simpleCart.add('name=Silk Hair','price=90','image=images/thumbs/body.jpg');return false;"style="color: #4F002F;" class="full">add to cart<i class="fa fa-cart-plus"></i></a>
+					</div>
+					<div class="alsoPrice price">$56.03</div>
+				</div>				
 			<!--End #sidebar-->	
 			</div>
-			<div id="footer">
-				Created by <a href="http://thewojogroup.com"><img src="images/wojo.gif" alt="The Wojo Group" /></a> <a href="http://thewojogroup.com">The Wojo Group</a> &nbsp;&nbsp;
-				&bull;&nbsp;&nbsp;<img src="images/microLogo.gif" alt="simple cart js" style="vertical-align:bottom" /> is licensed under <a href="#">MIT License</a>
-			</div>	
 		<!--End #content-->		
 		</div>
+			<script src="../js/jquery-2.1.1ln.js"></script>
+        <script src="../js/mainln.js"></script> <!-- Resource jQuery -->
+		<script type="text/javascript" src="../sironka.js"></script>
 </body>
 </html>

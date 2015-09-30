@@ -11,14 +11,14 @@
 	
 	<!--Include the SimpleCart(js) script-->
 	<link rel="icon" type="image/png" href="../img/icon.png" />
-		<link rel="stylesheet" type="text/css" href="../sironka.css"/>
+		<link rel="stylesheet" type="text/css" href="../sironka.css">
 		 <link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
 	<!--[if lte IE 6]><link rel="stylesheet" href="ie6.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
 	<!--[if IE 7]><link rel="stylesheet" href="ie7.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
 	<!--Include the SimpleCart(js) script-->
 	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<script src="javascripts/simpleCart.js" type="text/javascript" charset="utf-8"></script>
+	
 	<link rel="stylesheet" href="../css/resetln.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="../css/styleln.css"> <!-- Resource style -->
 	<script src="javascripts/simpleCart.js" type="text/javascript" charset="utf-8"></script>
@@ -37,14 +37,15 @@
 			color:#333;
 		}
 		.simpleCart_items{
+			margin-left: 100px;
 			float:left;
 			clear:left;
-			width:446px;
+			width:700px;	
 			margin:20px;
 		}
 		.itemContainer{
 			clear:both;
-			width:543px;
+			width:700px;
 			padding:15px 0;
 			font-size:11px;
 			line-height:25px;
@@ -52,19 +53,23 @@
 		}
 		.itemImage{
 			float:left;
-			width:80px;
+			width:100px;
 		}
 		.itemImage img{
 			vertical-align:middle;
+			width: 40px;
+			height: 30px;
 		}
 		.itemName{
 			float:left;
+			font-size: 14px;
 			width:160px;
 		}
 		.itemPrice{
 			float:left;
-			width:55px;
-			color:#418932;
+			width:90px;
+			font-size: 14px;
+			color:rgba(86,24,40,1);
 		}
 		.itemQuantity{
 			float:left;
@@ -78,27 +83,35 @@
 			padding:3px 2px;
 			margin:0 auto;
 			display:block;
+			font-family: Arial;
 			font-size:11px;
 		}
 		.itemTotal{
 			float:left;
-			color:#c23f26;
+			font-size: 14px;
+			color:rgba(86,24,40,1);
 			text-align:right;
-			width:45px;
+			width:90px;
+
 		}
 		.totalRow{
 			clear:both;
 			float:left;
+			padding-left: 25px;
 			margin-top:10px;
+
 		}
 		.totalItems{
 			float:left;
 			width:105px;
-			margin-left:295px;
+			margin-left:320px;
 			text-align:center;
+			text-decoration: underline;
 		}
 		.totalPrice{
 			float:right;
+			padding-left: 35px;
+			text-decoration: underline;
 			text-align:right;
 		}
 	</style>
@@ -108,10 +121,33 @@
 </head>
 
 <body style="background-color:white;">
+<div  style="background-image:url(../img/3.jpg);background-repeat:no-repeat;background-size:cover;">
+<div id="cd-nav">
+		<a href="#0" class="cd-nav-trigger"><span></span></a>
+       <div class="row">
+      
+          <div id="cd-logo"><a href="#0"><img src="../img/logo2.png" style="float:left;" class="nav" height="100px" width="140px"alt="Logo"></a></div>
+</div>
+		<div id="cd-main-nav">
+			<ul>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="../index.html">HOME</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="../shop/body.html">BODY</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="../shop/face.html">FACE</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="../shop/hair.html">HAIR</a></li>
+				<li><a class="nav" style="font-size:14px;font-weight:300;" href="#">BLOG</a></li>
+   			</ul>
+  		</div>
+	</div>
+<div class="top" style="padding-top:150px;">
+<h1 class="h1"><img src="../img/title.png" height="110px"width="270px;"></h1>
+     <div class="triangles"></div> 
+     </div>
+</div>
 		<div id="content">
 			
-			<div id="sidebar" style="margin-top:80px">
+			<div id="sidebar" style="margin-top:80px;border-left:1px solid rgba(164,168,169,0.5);padding-left:20px;padding-bottom:30px;">
 				<h2 class="bl">You Might Also Like</h2>
+				<hr style="color: rgba(192,209,213,0.5);"/>
 				<div class="alsoContainer">
 					<div class="alsoImage">
 						<img src="images/products/hair.png" alt="" class="like" />
@@ -156,7 +192,8 @@
 			
 			
 			<div id="header">
-				<h2>Your Cart</h2>
+				<h2 class="bl"style="font-size:30px;font-weight:100;">YOUR CART</h2>
+				<hr style="color: rgba(192,209,213,0.8);" />
 			</div>
 			<div id="left">
 			<!--Add a Div with the class "simpleCart_items" to show your shopping cart area.-->
@@ -165,8 +202,8 @@
 				
 				<div class="checkoutEmptyLinks">
 				<!--Here's the Links to Checkout and Empty Cart-->
-				<a href="#" class="simpleCart_empty">empty cart</a>
-				<a href="#" class="simpleCart_checkout">Checkout</a>
+				<input class="simpleCart_empty btns fa fa-trash-o" style="font-family:Arial;font-size:12px;" type="button" value="Empty cart"> |
+				<input type="button" onclick="myFunction()" value="Checkout" style="font-family:Arial;font-size:12px;" class="simpleCart_checkout btns">
 				</div>
 			</div>
 			
@@ -174,5 +211,8 @@
 
 		<!--End #content-->		
 		</div>
+			<script src="../js/jquery-2.1.1ln.js"></script>
+        <script src="../js/mainln.js"></script> <!-- Resource jQuery -->
+		<script type="text/javascript" src="../sironka.js"></script>
 </body>
 </html>
