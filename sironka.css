@@ -95,11 +95,21 @@ position:relative;
 .foot a:hover{
 	color: #E8E8E8;
 }
+.cnt{
+	float:right;font-size:20px;
+}
 @media screen and (max-width: 40em) {
 
 	.top{
 		padding-right: 0px;
 		padding-left: 50px;
+	}
+	.hid{
+		display: none;
+	}
+	.cnt{
+		float: left;
+		padding-left: 12px;
 	}
 }
 
