@@ -88,6 +88,12 @@ position:relative;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+.foot a{
+	color: #4F002F;
+}
+.foot a:hover{
+	color: #E8E8E8;
+}
 @media screen and (max-width: 40em) {
 
 	.top{
