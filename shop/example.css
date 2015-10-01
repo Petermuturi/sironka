@@ -35,6 +35,13 @@ table { border-collapse: collapse; border-spacing: 0;}
 	color:#e7ebf0;
 	opacity:.999;
 }
+#footercart{
+	clear:both;
+	padding-top:100px;
+	
+	font:normal 14px Helvetica, Arial, sans-serif;
+	
+}
 
 
 body{
