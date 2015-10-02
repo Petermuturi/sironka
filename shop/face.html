@@ -20,7 +20,7 @@
 	<!-- morphine links -->
 	
 		
-		
+		  <script src="//www.parsecdn.com/js/parse-1.6.4.min.js"></script>
 	
 	<!--Make a new cart instance with your paypal login email-->
 	<script type="text/javascript">
@@ -74,6 +74,9 @@
 			margin-top:-6px
 		}
 </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+
 <body style="background-color:white;">
 <div  style="background-image:url(../img/2.jpg);background-repeat:no-repeat;background-size:cover;background-position:center;">
 <div id="cd-nav">
@@ -233,6 +236,18 @@
 		</div>
 	</div>
 </div>
+<script type="text/javascript" src="../sironka.js"></script>
+		<script type="text/javascript">
+		var Hairproducts = Parse.Object.extend("face");
+    var hairstuff = new Hairproducts();
+      hairstuff.save({product: "Chocolate Buttter"}, {Price: "50.32"}, {
+      success: function(object) {
+        $(".success").show();
+      },
+      error: function(model, error) {
+        $(".error").show();
+      }
+    });</script>
 	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 			<script src="../js/jquery-2.1.1ln.js"></script>
         <script src="../js/mainln.js"></script> <!-- Resource jQuery -->
