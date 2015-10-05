@@ -207,7 +207,7 @@ header h1 {
     max-width: 400px;
     bottom: 20px;
     top: auto;
-    background: white;
+    background: rgba(192,209,213,1);
     visibility: hidden;
     box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
     -webkit-transform: scale(0);
@@ -263,7 +263,7 @@ header h1 {
   height: 44px;
   background: white;
   border-radius: 0.25em;
-  box-shadow: 0 0 10px rgba(232, 74, 100, 0.4);
+  box-shadow: 0 0 10px rgba(86,24,40,0.8);
   /* image replacement */
   overflow: hidden;
   text-indent: 100%;
@@ -327,7 +327,7 @@ header h1 {
   background: rgba(232, 74, 100, 0);
 }
 .cd-nav-trigger.menu-is-open span::before, .cd-nav-trigger.menu-is-open span::after {
-  background: #e84a64;
+  background: rgba(86,24,40,1);
 }
 .cd-nav-trigger.menu-is-open span::before {
   top: 0;
