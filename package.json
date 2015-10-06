@@ -1,0 +1,22 @@
+{
+  "name": "sironka",
+  "version": "1.0.0",
+  "description": "online shop",
+  "main": "serv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Petermuturi/sironka.git"
+  },
+  "author": "Petermuturi",
+  "license": "ISC",
+  "dependencies":{
+    "express": "~3.4.7"
+  },
+  "bugs": {
+    "url": "https://github.com/Petermuturi/sironka/issues"
+  },
+  "homepage": "https://github.com/Petermuturi/sironka#readme"
+}
