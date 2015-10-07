@@ -161,6 +161,26 @@ Message</label>
       	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:454px;width:598px;'><div id='gmap_canvas' style='height:454px;width:698px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://www.dict.md/'>http://www.dict.md</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=27dd64cebb2026dd6dca064ac8fb92d3df6ccf60'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(-1.290092295332177,36.82177453862301),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-1.290092295332177,36.82177453862301)});infowindow = new google.maps.InfoWindow({content:'<strong>Sironka</strong>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
       </div>
 </div>	
+
+
+<div ng-controller="item1">
+<table>
+<tr>
+<th>image</th>
+<th>description</th>
+<th>price</th>
+<th>tax</th>
+</tr>
+	<tr ng-repeat="product in products">
+		<td>{{product.image}}</td>
+		<td>{{product.description}}</td>
+		<td>{{product.price}}</td>
+		<td>{{product.tax}}</td>
+	</tr>
+	</table>
+</div>
+
+
 <div class="foot">
 <div class="row">
 <div class="col s2 hid" style="padding-top:15px;"><span ><a style="text-align:center;" href="#"><img src="img/title2.png" height="80px;" width="180px"></a></span></div>
@@ -175,6 +195,7 @@ Message</label>
 	</div>
 </div>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+<script type="text/javascript" src="controller.js"></script>
 <script src="ig/sironka.js"></script>
 		<script src="js/jquery-2.1.1ln.js"></script>
         <script src="js/mainln.js"></script> <!-- Resource jQuery -->

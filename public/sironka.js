@@ -29,7 +29,7 @@ function validation_for_signup()
                                                 document.signup.username.focus();
                                                 return false;
                                 }
-                                if(document.signup.phone.value==="")||(document.signup.phone.value <10)
+                                if((document.signup.phone.value==="")||(document.signup.phone.value <10))
                                 {
                                                 alert("Please enter your phone number.");
                                                 document.signup.passconf.focus();
