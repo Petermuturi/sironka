@@ -5,6 +5,18 @@ function validation_for_signup()
                 var check_username = /^[a-zA-Z0-9_]{3,16}$/;
                 var check_name = /^[a-zA-Z]{3,16}$/;
                 var check_phone = /^[0-9]{3,16}$/;
+                               if(document.signup.email.value==="")
+                                {
+                                                alert("please enter email");
+                                                document.signup.email.focus();
+                                                return false;
+                                }
+                                else if(check_email.test(document.signup.email.value) == false)
+                                {
+                                                alert('Invalid  email');
+                                                document.signup.email.focus();
+                                                return false;
+                                }
                                 if(document.signup.username.value==="")
                                 {
                                                 alert("please enter username");
@@ -17,16 +29,16 @@ function validation_for_signup()
                                                 document.signup.username.focus();
                                                 return false;
                                 }
-                                if(document.signup.email.value==="")
+                                if(document.signup.phone.value==="")||(document.signup.phone.value <10)
                                 {
-                                                alert("please enter email");
-                                                document.signup.email.focus();
+                                                alert("Please enter your phone number.");
+                                                document.signup.passconf.focus();
                                                 return false;
                                 }
-                                else if(check_email.test(document.signup.email.value) == false)
+                                 else if(check_phone.test(document.signup.phone.value) == false)
                                 {
-                                                alert('Invalid  email');
-                                                document.signup.email.focus();
+                                                alert('Invalid  phone number');
+                                                document.signup.phone.focus();
                                                 return false;
                                 }
                                 if(document.signup.password.value==='')
@@ -35,24 +47,13 @@ function validation_for_signup()
                                                 document.signup.password.focus();
                                                 return false;
                                 }
-                                else if(document.signup.password.value.length<8)
+                                else if(document.signup.password.value.length<6)
                                 {
-                                                alert("Password is too short.\nShould be atleast 8 characters");
+                                                alert("Password is too short.\nShould be atleast 6 characters");
                                                 document.signup.password.focus();
                                                 return false;
                                 }
-                                if(document.signup.passconf.value==='')
-                                {
-                                                alert("Please confirm Password.");
-                                                document.signup.passconf.focus();
-                                                return false;
-                                }
-                                else if(document.signup.password.value!==document.signup.passconf.value)
-                                {
-                                                alert("Password does not match.");
-                                                document.signup.password.focus();
-                                                return false;
-                                }
+                                
 }
 
 Parse.initialize("enNfvaZh8DCXVXxhnJKTSI3pj8P4rILSGHnlmX2w", "3iCBpsYvGi3SYKI8XyBOUMkzOw7SmYwPN8S4GhwX");

@@ -29,6 +29,21 @@
 	background-color: rgba(192,209,213,0.5);
 }
 
+.sbt{
+   padding-left: 12px;
+   padding-right: 12px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+.sbt:hover{
+   padding-left: 12px;
+   padding-right: 12px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   background-color: #0B4C5F;
+   color: #E8E8E8;
+}
+
 .top{ 
 	padding-left: 500px;
 	padding-right: 300px;
