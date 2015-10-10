@@ -1,14 +1,11 @@
 var express = require ('express');
  var app = express();
 
- var mongojs = require('mongojs');
- var db = mongojs('products', ['products']);
+
 
 app.use(express.static(__dirname + "/public"));
 	
 app.get('/products', function(req, res){
-	res.render('404', { status: 404, url: req.url });
-
    console.log("I recieved")
    hair = {
 		image : "image1",
