@@ -1,9 +1,14 @@
 var express = require ('express');
  var app = express();
 
-app.use(express.static(__dirname + "/public"));
+ var mongojs = require('mongojs');
+ var db = mongojs('products', ['products']);
 
+app.use(express.static(__dirname + "/public"));
+	
 app.get('/products', function(req, res){
+	res.render('404', { status: 404, url: req.url });
+
    console.log("I recieved")
    hair = {
 		image : "image1",
@@ -28,5 +33,5 @@ app.get('/products', function(req, res){
 	res.json(products);
 });
 
- app.listen(3000);
+ app.listen(9119);
  console.log("Server by Peter");
