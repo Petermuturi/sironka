@@ -1,0 +1,22 @@
+{
+  "name": "Sironka",
+  "version": "0.1.5",
+  "description": "Sironka, PURE.SIMPLE.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "2.3.3",
+    "express": "4.13.3"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
+}
