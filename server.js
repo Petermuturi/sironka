@@ -1,12 +1,11 @@
 var express = require ('express');
  var app = express();
 
-
-
 app.use(express.static(__dirname + "/public"));
 	
 app.get('/products', function(req, res){
    console.log("I recieved")
+   
    hair = {
 		image : "image1",
 		description : "description1",
@@ -30,5 +29,5 @@ app.get('/products', function(req, res){
 	res.json(products);
 });
 
- app.listen(9119);
+ app.listen(3000);
  console.log("Server by Peter");

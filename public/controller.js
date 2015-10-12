@@ -3,7 +3,7 @@ function item1($scope, $http){
 
  $http.get('/products').success(function(response){
  	console.log("I got the data i requested");
- 	$scope.products = response;
+
  });
 
 }
