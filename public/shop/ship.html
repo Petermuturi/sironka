@@ -16,10 +16,9 @@
 	<link rel="stylesheet" href="../css/resetln.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="../css/styleln.css"> <!-- Resource style -->
 	<!-- morphine links -->
-	<script type="text/javascript">
-	$(document).ready(function() {
-    $('select').material_select();
-  });</script>
+	        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="sliding.form.js"></script>
 </head>
 <body style="background-color:white;">
 <div  style="background-image:url(../img/ship.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;">
@@ -47,24 +46,20 @@
 </div>
 <!-- end of first container -->
 <div class="row" style="padding-top:40px;">
-	<div class="col s7">
-	<div>
-				<div id="content">
+	<div id="content">
+			<div class="col s7">
 			 <div id="wrapper">
                 <div id="steps">
-                <fieldset class="step">
-                 <legend>Customer Details</legend>
-			<div id="header">
-			
-				<h2 class="bl" style="font-size:20px;font-weight:100;">CUSTOMER INFORMATION</h2>
+                <fieldset class="step">		
 			 <div class="input-field col s9">
+			 <h2 class="bl" style="font-size:20px;font-weight:100;">CUSTOMER INFORMATION</h2>
 			 <a style="color: #0B4C5F;"><i class="fa fa-envelope-o"></i> Email</a>
-          <input id="email" style="color:#4F002F" type="email" name="email" class="validate">
+          <input AUTOCOMPLETE=OFF id="email" style="color:#4F002F" type="email" name="email" class="validate">
           <p style="font-size:12px;">ALready have an account with us? <a href="../index.html">Log in</a></p>
 			</div>		
-	</div>
+
 				
-			<div id="header" class="col s12" style="padding-top:50px;">
+			<div class="col s12" style="padding-top:50px;">
 				<h2 class="bl" style="font-size:20px;font-weight:100;">SHIPPING ADDRESS</h2>
 			</div>		
 		<div class="row">
@@ -72,21 +67,21 @@
 				<div class="row">
         <div class="input-field col s6">
         <a style="color:#0B4C5F;">First Name</a>
-          <input id="first" type="text" class="validate">          
+          <input AUTOCOMPLETE=OFF id="first" type="text" class="validate">          
         </div>
         <div class="input-field col s6">
         <a style="color:#0B4C5F;">Last Name</a>
-          <input id="last" type="text" class="validate">          
+          <input AUTOCOMPLETE=OFF id="last" type="text" class="validate">          
         </div>
       </div>
       <div class="row">
        <div class="input-field col s6">
         <a style="color:#0B4C5F;">Address</a>
-          <input id="address" type="text" class="validate">          
+          <input AUTOCOMPLETE=OFF id="address" type="text" class="validate">          
         </div>
         <div class="input-field col s6">
         <a style="color:#0B4C5F;">City</a>
-          <input id="city" type="text" class="validate">          
+          <input AUTOCOMPLETE=OFF id="city" type="text" class="validate">          
         </div>
         </div>            
         <div class="row">
@@ -271,16 +266,57 @@
         </div>
          <div class="input-field col s6">
         <a style="color:#0B4C5F;">Postal code</a>
-          <input id="code" type="text" class="validate">          
+          <input AUTOCOMPLETE=OFF id="code" type="text" class="validate">          
         </div>
         </div>
                   <div class="input-field col s12">
         <a style="color:#0B4C5F;">Phone number</a>
-          <input id="phone" type="text" class="validate">          
+          <input AUTOCOMPLETE=OFF id="phone" type="text" class="validate">          
         </div>
 			</form>
 		</div>
-	</div>
+</fieldset>
+<fieldset class="step">
+                            <legend>Settings</legend>
+                            <p>
+                                <label for="newsletter">Newsletter</label>
+                                <select id="newsletter" name="newsletter">
+                                    <option value="Daily" selected>Daily</option>
+                                    <option value="Weekly">Weekly</option>
+                                    <option value="Monthly">Monthly</option>
+                                    <option value="Never">Never</option>
+                                </select>
+                            </p>
+                            <p>
+                                <label for="updates">Updates</label>
+                                <select id="updates" name="updates">
+                                    <option value="1" selected>Package 1</option>
+                                    <option value="2">Package 2</option>
+                                    <option value="0">Don't send updates</option>
+                                </select>
+                            </p>
+							<p>
+                                <label for="tagname">Newsletter Tag</label>
+                                <input id="tagname" name="tagname" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                        </fieldset>
+</div>
+ <div id="navigation">
+                    <ul>
+                        <li class="selected">
+                            <a href="#">Customer Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Shipping Method</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment Method</a>
+                        </li>
+                        <li>
+                            <a href="#">Confirm</a>
+                        </li>
+                    </ul>
+                </div>
 </div>
 </div>
 <div class="col s1" style="color:white;">.</div>
@@ -304,7 +340,7 @@
 
 			</div>	
 </div>
-
+</div>
 <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
 			<script src="../js/jquery-2.1.1ln.js"></script>
         <script src="../js/mainln.js"></script> <!-- Resource jQuery -->
