@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../sironka.css"/>
 		 <link rel="stylesheet" type="text/css" href="../materialize/css/materialize.min.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="example.css" type="text/css" media="screen" charset="utf-8" />
+		<!-- <link rel="stylesheet" href="example.css" type="text/css" media="screen" charset="utf-8" /> -->
 	<!--[if lte IE 6]><link rel="stylesheet" href="ie6.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
 	<!--[if IE 7]><link rel="stylesheet" href="ie7.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
 	<!--Include the SimpleCart(js) script-->
@@ -16,7 +16,10 @@
 	<link rel="stylesheet" href="../css/resetln.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="../css/styleln.css"> <!-- Resource style -->
 	<!-- morphine links -->
-	
+	<script type="text/javascript">
+	$(document).ready(function() {
+    $('select').material_select();
+  });</script>
 </head>
 <body style="background-color:white;">
 <div  style="background-image:url(../img/ship.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;">
@@ -50,14 +53,91 @@
 			<form class="col s12">
 				<div class="row">
         <div class="input-field col s6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
+        <a style="color:#0B4C5F;">First Name</a>
+          <input id="first" type="text" class="validate">          
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
+        <a style="color:#0B4C5F;">Last Name</a>
+          <input id="last" type="text" class="validate">          
         </div>
       </div>
+      <div class="row">
+       <div class="input-field col s6">
+        <a style="color:#0B4C5F;">Address</a>
+          <input id="address" type="text" class="validate">          
+        </div>
+        <div class="input-field col s6">
+        <a style="color:#0B4C5F;">City</a>
+          <input id="city" type="text" class="validate">          
+        </div>
+        </div>
+ 
+    
+            
+        <div class="row">
+         <div class="input-field col s7">
+        <a style="color:#0B4C5F;">Country</a>
+       <select class="browser-default">
+<option disabled="disabled" value="---">Your Country</option>
+<option value="Andorra">Andorra</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Belgium">Belgium</option>
+<option value="Brazil">Brazil</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Canada">Canada</option>
+<option value="Croatia">Croatia</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="Germany">Germany</option>
+<option value="Gibraltar">Gibraltar</option>
+<option value="Greece">Greece</option>
+<option value="Greenland">Greenland</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="Ireland">Ireland</option>
+<option value="Italy">Italy</option>
+<option value="Japan">Japan</option>
+<option selected="selected" value="Kenya">Kenya</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Mexico">Mexico</option>
+<option value="Monaco">Monaco</option>
+<option value="Montenegro">Montenegro</option>
+<option value="Netherlands">Netherlands</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Norway">Norway</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russia</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Spain">Spain</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Thailand">Thailand</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Vietnam">Vietnam</option>
+       </select>
+              
+        </div>
+         <div class="input-field col s5">
+        <a style="color:#0B4C5F;">Postal code</a>
+          <input id="code" type="text" class="validate">          
+        </div>
+        </div>
+                  <div class="input-field col s12">
+        <a style="color:#0B4C5F;">Phone number</a>
+          <input id="phone" type="text" class="validate">          
+        </div>
 			</form>
 		</div>
 	</div>
