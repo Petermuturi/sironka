@@ -7,7 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="../sironka.css"/>
 		 <link rel="stylesheet" type="text/css" href="../materialize/css/materialize.min.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
-		<!-- <link rel="stylesheet" href="example.css" type="text/css" media="screen" charset="utf-8" /> -->
+		<link rel="stylesheet" href="example.css" type="text/css" media="screen" charset="utf-8" />
 	<!--[if lte IE 6]><link rel="stylesheet" href="ie6.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
 	<!--[if IE 7]><link rel="stylesheet" href="ie7.css" type="text/css" media="screen" charset="utf-8" /><![endif]-->
 	<!--Include the SimpleCart(js) script-->
@@ -19,6 +19,63 @@
 	        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script type="text/javascript" src="sliding.form.js"></script>
+
+      
+  <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+  <script src="//www.parsecdn.com/js/parse-1.6.4.min.js"></script>
+  
+  <!--Make a new cart instance with your paypal login email-->
+  <script type="text/javascript">
+    simpleCart = new cart("orders@sironka.co.ke");
+  </script> 
+</head>
+<style type="text/css">
+  .cartHeaders,.totalRow{display:none;}
+    .simpleCart_items{
+      overflow-y:auto;
+      overflow-x:hidden;
+      height:324px;
+      width:243px;
+      margin-bottom:20px;
+    }
+    .itemContainer{
+      clear:both;
+      width:229px;
+      padding:11px 0;
+      font-size:11px;
+    }
+     .itemImage{
+      float:left;
+      width:60px;
+    }
+
+    .itemName{
+      float:left;
+      width:85px;
+    }
+    .itemPrice{
+      float:left;
+      width:85px;
+      color:#418932;
+    }
+    .itemQuantity{
+      float:left;
+      width:33px;
+      margin-top:-12px;
+      vertical-align:middle;
+    }
+    .itemQuantity input{
+      width:20px;
+      border:1px solid #ccc;
+      padding:3px 2px;
+    }
+
+    .itemTotal{
+      float:left;
+      color:#c23f26;
+      margin-top:-6px
+    }
+</style>  
 </head>
 <body style="background-color:white;">
 <div  style="background-image:url(../img/ship.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;">
