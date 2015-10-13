@@ -154,6 +154,24 @@ function shipping() {
                                                 document.shipping.last.focus();
                                                 return false;
                                 }
+                               if(document.shipping.address.value==="")
+                                {
+                                                alert("please enter address");
+                                                document.shipping.address.focus();
+                                                return false;
+                                }
+                                 if(document.shipping.city.value==="")
+                                {
+                                                alert("please enter city");
+                                                document.shipping.city.focus();
+                                                return false;
+                                }
+                                 if(document.shipping.code.value==="")
+                                {
+                                                alert("please enter postal code");
+                                                document.shipping.code.focus();
+                                                return false;
+                                }
                                 if((document.shipping.phone.value==="")||(document.shipping.phone.value <10))
                                 {
                                                 alert("Please enter your phone number.");
@@ -166,5 +184,5 @@ function shipping() {
                                                 document.shipping.phone.focus();
                                                 return false;
                                 }
-
+                         
   }
