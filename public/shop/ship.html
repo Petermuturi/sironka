@@ -16,10 +16,12 @@
 	<link rel="stylesheet" href="../css/resetln.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="../css/styleln.css"> <!-- Resource style -->
 	<!-- morphine links -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
 	        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
         <script type="text/javascript" src="sliding.form.js"></script>
 
+<script type="text/javascript" src="../sironka.js"></script>
 
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
   <script src="//www.parsecdn.com/js/parse-1.6.4.min.js"></script>
@@ -84,7 +86,7 @@
     }
 </style>  
 </head>
-<body style="background-color:white;">
+<body style="background-color:white;"  ng-app="AuthApp">
 <div  style="background-image:url(../img/ship.jpg);background-position:center;background-repeat:no-repeat;background-size:cover;">
 <div id="cd-nav">
 		<a href="#0" class="cd-nav-trigger"><span></span></a>
@@ -109,12 +111,12 @@
      </div>
 </div>
 <!-- end of first container -->
-<div class="row">
+<div class="row" ng-hide="currentUser">
 	<div id="content">
 			<div class="col s7">
-			 <div id="wrapper">
+			 <div id="wrapper" style="border:1px solid #E8E8E8;">
                 <div id="steps">
-                <fieldset class="step">		
+                <fieldset class="step" style="padding-bottom:150px;">		
 			 <div class="input-field col s9">
 			 <h2 class="bl" style="font-size:20px;font-weight:100;padding-bottom:12px;">CUSTOMER INFORMATION</h2>
 			 <a style="color: #0B4C5F;"><i class="fa fa-envelope-o"></i> Email</a>
@@ -127,7 +129,7 @@
 				<h2 class="bl" style="font-size:20px;font-weight:100;">SHIPPING ADDRESS</h2>
 			</div>		
 		<div class="row">
-			<form class="col s12"id="formElem" name="formElem" action="" method="post">
+			<form class="col s12"id="formElem" name="formElem" action="" ng-show="scenario == 'ship'" onSubmit="return shipping" method="post">
 				<div class="row">
         <div class="input-field col s6">
         <a style="color:#0B4C5F;">First Name</a>
@@ -457,6 +459,7 @@
     </div>
   </div>
 </div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
 			<script src="../js/jquery-2.1.1ln.js"></script>
         <script src="../js/mainln.js"></script> <!-- Resource jQuery -->
