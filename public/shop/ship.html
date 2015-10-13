@@ -23,7 +23,17 @@
 
   <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
   <script src="//www.parsecdn.com/js/parse-1.6.4.min.js"></script>
+<script type="text/javascript">
   
+  $(document).ready(function() {
+   $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15 // Creates a dropdown of 15 years to control year
+  });
+        
+  });
+        
+</script>
   <!--Make a new cart instance with your paypal login email-->
   <script type="text/javascript">
     simpleCart = new cart("orders@sironka.co.ke");
@@ -315,7 +325,7 @@
 <option value="VG">Virgin Islands, British</option>
 <option value="YE">Yemen</option>
 <option value="ZM">Zambia</option>
-<option value="ZW">Zimbabwe</option></select>
+<option value="ZW">Zimbabwe</option>
        </select>              
         </div>
          <div class="input-field col s6">
@@ -331,7 +341,7 @@
 <fieldset class="step">
 <div class="col s12" style="padding-bottom:450px;">
 <div class="col s12">
-        <p style="padding-left:180px;"><img src="../img/logo.png" height="250px" width="300px"></p>
+        <p style="padding-left:180px;"><img src="../img/logo.png" height="250px" width="300px"/></p>
 </div>
      <div class="col s12" style="padding-top:50px;">
         <h2 class="bl" style="font-size:20px;font-weight:100;">SHIPPING METHOD</h2>
@@ -345,6 +355,7 @@
     </p>
     </div>
 </fieldset>
+
 <fieldset class="step">
 <div class="col s12">
     <div class="col s6" style="padding-top:40px;">
@@ -363,11 +374,11 @@
               <a style="color: #0B4C5F; font-size:14px;">Name on Card</a>
       <input AUTOCOMPLETE=OFF id="cardnm"  style="color:#4F002F" type="email" name="email" class="validate">     
         </div>
-        <div class="input-field col s3">
-                   <a style="color: #0B4C5F; font-size:14px;">MM/YYYY</a>
-      <input AUTOCOMPLETE=OFF id="my"  style="color:#4F002F" type="email" name="email" class="validate">
+        <div class="input-field col s4">
+                   <a style="color: #0B4C5F; font-size:14px;">MM/DD/YYYY</a>
+      <input AUTOCOMPLETE=OFF id="my"  style="color:#4F002F"  type="date" class="datepicker">
         </div>
-        <div class="input-field col s3">
+        <div class="input-field col s2">
                    <a style="color: #0B4C5F; font-size:14px;">CVV</a>
       <input AUTOCOMPLETE=OFF id="cvv"  style="color:#4F002F" type="email" name="email" class="validate">
     </div>
@@ -394,16 +405,16 @@
  <div id="navigation" style="margin-top:-50px;padding-bottom:100px;">
                     <ul>
                         <li class="selected">
-                            <a href="#">Customer Details</a>
+                            <a style="font-size:13px;" href="#">Customer Details</a>
                         </li>
                         <li>
-                            <a href="#">Shipping Method</a>
+                            <a style="font-size:13px;" href="#">Shipping Method</a>
                         </li>
                         <li>
-                            <a href="#">Payment Method</a>
+                            <a style="font-size:13px;" href="#">Payment Method</a>
                         </li>
                         <li>
-                            <a href="#">Complete Order</a>
+                            <a style="font-size:13px;" href="#">Complete Order</a>
                         </li>
                     </ul>
                 </div>
