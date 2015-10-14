@@ -34,7 +34,12 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
+.pay{
+	background-image: url(img/pay.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 .body{
 	background-color: rgba(192,209,213,0.5);
 }
