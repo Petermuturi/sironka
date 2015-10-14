@@ -32,11 +32,11 @@ app.get('/products', function(req, res){
 
 var server = http.createServer(function(req, res){
 	res.writeHead(200, {'Content-Type': 'text/html'});
-	res.end("");
+	res.end(app);
 });
 
-var port = Number(process.env.PORT || 8080);
+var port = Number(process.env.PORT || 8000);
 
-server.listen(8081);
+server.listen(8001);
  app.listen(port);
  console.log("Server by Peter");
