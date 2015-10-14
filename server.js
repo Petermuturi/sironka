@@ -35,8 +35,8 @@ var server = http.createServer(function(req, res){
 	res.end(app);
 });
 
-var port = Number(process.env.PORT || 8000);
+var port = Number(process.env.PORT || 8082);
 
-server.listen(8001);
+server.listen(8011);
  app.listen(port);
  console.log("Server by Peter");
