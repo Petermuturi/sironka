@@ -27,6 +27,14 @@
  padding-bottom: 40px;
 
 }
+
+.msg{
+	background-image: url(img/msg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .body{
 	background-color: rgba(192,209,213,0.5);
 }
