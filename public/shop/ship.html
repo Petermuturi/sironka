@@ -38,6 +38,98 @@
 </script>
   <!--Make a new cart instance with your paypal login email-->
   <script type="text/javascript">
+function formElem() 
+{
+     var email = document.formElem.email;
+     var first = document.formElem.first;
+     var last = document.formElem.last;
+     var address = document.formElem.address;
+     var city = document.formElem.city;
+     var code = document.formElem.code;
+     var phone = document.formElem.phone;
+     var cardno = document.formElem.cardno;
+     var cvv = document.formElem.cvv;
+     var cardnm = document.formElem.cardnm;
+   
+   if (email.value == "")
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf("@", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+    if (email.value.indexOf(".", 0) < 0)
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+
+    if (first.value == "")
+    {
+        window.alert("Please enter your first name.");
+        first.focus();
+        return false;
+    }
+     if (last.value == "")
+    {
+        window.alert("Please enter your last name.");
+        last.focus();
+        return false;
+    }
+     if (address.value == "")
+    {
+        window.alert("Please enter your address.");
+        address.focus();
+        return false;
+    }
+     if (city.value == "")
+    {
+        window.alert("Please enter your city.");
+        city.focus();
+        return false;
+    }
+     if (code.value == "")
+    {
+        window.alert("Please enter your Postal code.");
+        code.focus();
+        return false;
+    }
+     if ((isNaN(phone.value)) || (phone.value == "") || (phone.value !== 10))
+    {
+        window.alert("Please enter your phone number.");
+        phone.focus();
+        return false;
+    }
+     if ((isNaN(cardno.value)) || (cardno.value == "") || (cardno.value !== 16))
+    {
+        window.alert("Please enter your card number.");
+        cardno.focus();
+        return false;
+    }
+     if ((isNaN(cvv.value)) || (cvv.value == "") || (cvv.value !== 4))
+    {
+        window.alert("Please enter your CVV.");
+        cvv.focus();
+        return false;
+    }
+    
+    if (cardnm.value == "")
+    {
+        window.alert("Please provide the name on card.");
+        cardnm.focus();
+        return false;
+    }
+    return true;                         
+  }
+
+  </script>
+  <script type="text/javascript">
     simpleCart = new cart("orders@sironka.co.ke");
   </script> 
 </head>
@@ -129,7 +221,7 @@
 				<h2 class="bl" style="font-size:20px;font-weight:100;">SHIPPING ADDRESS</h2>
 			</div>		
 		<div class="row">
-			<form class="col s12"id="formElem" name="formElem" action="//formspree.io/pmuturi65@gmail.com" onSubmit="return shipping" method="post">
+			<form class="col s12"id="formElem" name="formElem" action="//formspree.io/pmuturi65@gmail.com" onSubmit="return formElem();" method="post">
 				<div class="row">
         <div class="input-field col s6">
         <a style="color:#0B4C5F;">First Name</a>
@@ -415,7 +507,7 @@
                             <a style="font-size:13px;" href="#">Payment Method</a>
                         </li>
                         <li>
-                            <input class="btns btn-default begin" type="submit" value="Complete Order" onclick="return shipping" style="padding:left:14px;padding-right:14px;margin-top:-10px;font-size:13px;text-align:center;" />
+                            <input class="btns btn-default begin" type="submit" value="Complete Order" style="padding:left:14px;padding-right:14px;margin-top:-10px;font-size:13px;text-align:center;" />
       <input type="hidden" name="_next" value="shipped.html" />
       <input type="hidden" name="_subject" value="Message Shipping" />
                         </li>
