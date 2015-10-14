@@ -1,22 +1,20 @@
 {
-  "name": "Sironka",
-  "version": "0.1.5",
-  "description": "Sironka, PURE.SIMPLE.",
+  "name": "sironka",
+  "version": "1.0.0",
+  "description": "Sironka Pure Simple",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "dependencies": {
-    "ejs": "2.3.3",
-    "express": "4.13.3"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Petermuturi/sironka.git"
   },
-  "engines": {
-    "node": "0.12.7"
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Petermuturi/sironka/issues"
   },
-  
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ]
+  "homepage": "https://github.com/Petermuturi/sironka"
 }

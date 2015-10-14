@@ -1,5 +1,6 @@
 var express = require ('express');
  var app = express();
+ var http = require ('http');
 
 app.use(express.static(__dirname + "/public"));
 	
@@ -29,5 +30,13 @@ app.get('/products', function(req, res){
 	res.json(products);
 });
 
- app.listen(3000);
+var server = http.createServer(function(req, res){
+	res.writeHead(200, {'Content-Type': 'text/html'});
+	res.end("");
+});
+
+var port = Number(process.env.PORT || 8080);
+
+server.listen(8081);
+ app.listen(port);
  console.log("Server by Peter");
