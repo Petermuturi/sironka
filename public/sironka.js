@@ -113,10 +113,14 @@ user.signUp(null, {
   }
 });
 
-function shipping() {
-    var check_email = /^[\w\.]+@[a-zA-Z_]+?\.[a-zA-Z\.]{2,6}$/;
+
+
+
+function shipping() 
+{
+                var check_email = /^[\w\.]+@[a-zA-Z_]+?\.[a-zA-Z\.]{2,6}$/;
                 var check_first = /^[a-zA-Z]{3,16}$/;
-                 var check_last = /^[a-zA-Z]{3,16}$/;
+                var check_last = /^[a-zA-Z]{3,16}$/;
                 var check_phone = /^[0-9]{3,16}$/;
                                if(document.shipping.email.value==="")
                                 {
@@ -186,3 +190,4 @@ function shipping() {
                                 }
                          
   }
+
