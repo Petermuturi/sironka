@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Petermuturi/sironka/issues"
   },
-  "homepage": "https://github.com/Petermuturi/sironka"
+  "homepage": "https://github.com/Petermuturi/sironka",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
