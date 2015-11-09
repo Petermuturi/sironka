@@ -1,0 +1,29 @@
+<div class="row" style="padding-top:40px;">
+<div class="col s2">.</div>
+	<div class=" col s3">
+		<p style="font-size:30px;font-family: 'Open Sans Condensed', sans-serif;">Like us on Facebook!</p>
+		<a href="http://www.facebook.com/sironkake" style="color: #4F002F;font-family: 'Open Sans Condensed', sans-serif;" class="full">Like our page <i class="fa fa-thumbs-o-up"></i></a>
+		<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+		<div style="width:600px; height:200px;" class="fb-page" data-href="https://www.facebook.com/sironkake" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/sironkake"><a href="https://www.facebook.com/sironkake">Sironka</a></blockquote></div></div>
+		</div>
+		<div class="col s2">.</div>
+    <div class="col s3">
+    <p style="font-size:30px;font-family: 'Open Sans Condensed', sans-serif;">Follow us on Twitter!</p>
+		<a href="https://twitter.com/ItsSironka"style="color: #4F002F;font-family: 'Open Sans Condensed', sans-serif;" class="full">Follow our page <i class="fa fa-twitter"></i></a>
+    	<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/ItsSironka" data-widget-id="654554870716989440">Tweets by @ItsSironka</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<br/>
+<br/>
+<p style="font-size:30px;font-family: 'Open Sans Condensed', sans-serif;">We're on Instagram!</p>
+		<a href="http://instagram.com/itssironka"style="color: #4F002F;font-family: 'Open Sans Condensed', sans-serif;" class="full">Follow our page <i class="fa fa-instagram"></i></a>
+		<iframe src="http://widget.websta.me/in/itssironka/?s=250&w=2&h=1&b=1&bg=FFFFFF&p=100" allowtransparency="true" frameborder="0" scrolling="yes" style="border:none;overflow:hidden;width:320px; height: 360px" ></iframe> <!-- websta - web.stagram.com -->
+    </div>
+	</div>
+</div>

@@ -16,11 +16,13 @@
 	<link rel="stylesheet" href="css/styleln.css"> <!-- Resource style -->
 	<!-- morphine links -->
 	     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/content.css" />
 		<script src="js/modernizr.custom.js"></script>
 		<!-- morphine links -->
+		<link rel="stylesheet" type="text/css" href="intro/css/demo.css" />
+		<script src="intro/js/modernizr.custom.js"></script>
 	<script src="js/modernizrln.js"></script> <!-- Modernizr -->
 		<script src="js/modernizr.customslide.js"></script>
 		 <script type="text/javascript" src="sironka.js"></script>
@@ -73,7 +75,7 @@ Username: <input style="color: #4F002F;" id="username" type="text" class="valida
 
   </div>
 			
-			<div ng-show="currentUser" style="text-align:center;padding-top:90px;">
+			<div ng-show="currentUser" style="text-align:center;padding-top:50px;">
     <h1>Welcome <span style="color:#4F002F;">{{currentUser.get('username')}}</span></h1>
     <p> You have been successfully logged in<br/>Let's start shopping</p>
     <input class="sbt" value="Logout" type="submit" class="sign" ng-click="logOut(user)"/>
@@ -113,41 +115,41 @@ Username: <input style="color: #4F002F;" id="username" type="text" class="valida
 		</div><!-- /container -->
 		<!-- body continues here! -->
 	
-	<p style="font-size:40px; font-family:Helevetica;text-align:center;font-weight:100;padding-top:90px;">Sironka, from head to toe.<br/>
+	<p style="font-size:40px; font-family: 'Open Sans Condensed', sans-serif;text-align:center;font-weight:100;padding-top:90px;">Sironka, from head to toe.<br/>
 Look your best.</p>
-<p style="font-size:23px;text-align:center;font-weight:100;padding-bottom:50px;padding-top:30px;">Sironka products, made by the finest organic products.<br/>
-Blends in your body like a dream.</p>
+<p style="font-size:23px;text-align:center;font-family: 'Open Sans Condensed', sans-serif;font-weight:100;padding-bottom:50px;padding-top:30px;">Sironka products, made by the finest organic products.<br/>
+Blends in your body, face and hair like a dream.</p>
 	<hr width="1000px;" style="color:#E8E8E8;" />
-	<div class="row">
-<p class="bout">WHAT IS SIRONKA<i style="font-size:20px;" class="fa fa-question-circle"></i></p>
-<div class="col s3"><img style="float:right;" src="img/what.jpg" height="150px" width="140px;"></div>
-<div class="col s9">
-<p class="pp">Sironka is a lady-product company that offers nutritious cream on your face, body and hair.<br/>We offer new life to your face, body and hair.commodo iaculis. Mauris sed mi at velit cursus iaculis sit amet vitae tortor.Etiam rutrum maximus nulla id luctus. Aliquam sit amet facilisis dui.In a mauris neque. Mauris tincidunt dictum justo id bibendum.</p>
+	<div class="row" style="padding-bottom:30px;padding-top:30px;">
+	<div class="col s2" style="opacity:0;">.</div>
+	<div class="col s12 m3" style="text-align:center;font-family: 'Open Sans Condensed', sans-serif;">
+		<img src="img/mg1.jpg" height="200px"
+		width="200px">
+		<p class="bout">GET TO KNOW US!</p>
+		<p style="padding-bottom:30px;">Sironka, a cream that offers nutritious cream on your face, body and hair.</p>
+		<a style="text-transform:uppercase;color:#4F002F;" href="shop/hair.html">see our hair products</a>
 	</div>
+	<div class="col s12 m3" style="text-align:center;font-family: 'Open Sans Condensed', sans-serif;">
+		<img src="img/mg3.jpg" height="200px"
+		width="200px">
+		<p class="bout">WHY US</p>
+		<p style="padding-bottom:30px;">Our lightly whipped creams are 98% made from natural ingredients.</p>
+		<a style="text-transform:uppercase;color:#4F002F;" href="shop/hair.html">our body products</a>
 	</div>
-<hr width="1000px;" style="color:#E8E8E8;" />
-<div class="row">
-	<p class="bout">OUR PRODUCTS<i style="font-size:20px;" class="fa fa-question-circle"></i></p>
-	<div class="col s3"><img style="float:right;" src="img/product.jpg" height="150px" width="140px;"></div>
-	<div class="col s9">
-<p class="pp">Our products are made by the finest organic products across the globe, that makes you feel younger everyday.<br/>
-Our mission is to make you feel pure and have a healthy skin. Our cream is suited best to curl care for your hair and gives you strong hair.Etiam rutrum maximus nulla id luctus. Aliquam sit amet facilisis dui.In a mauris neque. Mauris tincidunt dictum justo id bibendum.</p>
+	<div class="col s12 m3" style="text-align:center;font-family: 'Open Sans Condensed', sans-serif;">
+		<img src="img/mg2.jpg" height="200px"
+		width="200px">
+		<p class="bout">OUR PRODUCTS</p>
+		<p style="padding-bottom:30px;">Our products are made by the finest organic products across the globe, that makes you feel younger everyday.</p>
+		<a style="text-transform:uppercase;color:#4F002F;" href="shop/hair.html">check-out our face products</a>
 	</div>
-	
 </div>
-<hr width="1000px;" style="color:#E8E8E8;" />
-<div class="row">
-	<p class="bout">WHY SIRONKA<i style="font-size:20px;" class="fa fa-question-circle"></i></p>
-	<div class="col s3"><img style="float:right;" src="img/why.jpg" height="150px" width="140px;"></div>
-<div class="col s9">
-<p class="pp">Our lightly whipped creams are 98% made from natural ingredients. It is just overflowing with the goodness of cocoa and shea butters to soften and moisturise your skin, with nourishing apricot oil, conditioning coconut oil and vitamin E oil, to keep your skin as soft as can be, with a delightful jasmine fragrance and a hint of mica to leave your skin with a subtle glow. It melts straight into your skin and hair - try it, preferably straight after a bath or shower, and you’ll be hooked! Ideal to complement real or fake tan - lovely on your neck if you’re going out, or by itself for a healthy glow during the day.</p>
-	</div>
-</div>	
+<hr width="1000px;" style="color:#E8E8E8;" />	
  <div class="row" style="padding-top:65px;"id="contact">
-  <p style="font-size:20px; text-align:center;padding-bottom:20px;">CONTACT US NOW.</p>
+  <p style="font-size:20px;font-family: 'Open Sans Condensed', sans-serif; text-align:center;padding-bottom:20px;">CONTACT US NOW.</p>
  <div class="col s2">.</div>
    <div class="col s4">
-      <form action="//formspree.io/pmuturi65@gmail.com"  method="POST"  >
+      <form action="//formspree.io/pmuturi65@gmail.com"  method="POST"  style="font-family: 'Open Sans Condensed', sans-serif;" >
           <div class="input-field col s12">
           <input id="first_name" style="color:#4F002F" type="text" name="name" class="validate">
           <label style="color: #0B4C5F;" for="first_name"><i class="fa fa-smile-o"></i>
@@ -169,70 +171,65 @@ Message</label>
       </form>
       </div>
       <div class="col s6" style="opacity:0.8; font-size:12px;">
-      	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:454px;width:598px;'><div id='gmap_canvas' style='height:454px;width:698px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://www.dict.md/'>http://www.dict.md</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=27dd64cebb2026dd6dca064ac8fb92d3df6ccf60'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(-1.290092295332177,36.82177453862301),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-1.290092295332177,36.82177453862301)});infowindow = new google.maps.InfoWindow({content:'<strong>Sironka</strong>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+      	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:454px;width:498px;'><div id='gmap_canvas' style='height:454px;width:698px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='http://www.dict.md/'>http://www.dict.md</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=27dd64cebb2026dd6dca064ac8fb92d3df6ccf60'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:16,center:new google.maps.LatLng(-1.290092295332177,36.82177453862301),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-1.290092295332177,36.82177453862301)});infowindow = new google.maps.InfoWindow({content:'<strong>Sironka</strong>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
       </div>
 </div>	
 
-<div class="row" style="padding-top:40px;">
-<div class="col s2">.</div>
-	<div class=" col s3">
-		<p style="font-size:30px;">Like us on Facebook!</p>
-		<a href="http://www.facebook.com/sironkake" style="color: #4F002F;" class="full">Like our page <i class="fa fa-thumbs-o-up"></i></a>
-		<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-		<div style="width:600px; height:200px;" class="fb-page" data-href="https://www.facebook.com/sironkake" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/sironkake"><a href="https://www.facebook.com/sironkake">Sironka</a></blockquote></div></div>
-		</div>
-		<div class="col s2">.</div>
-    <div class="col s3">
-    <p style="font-size:30px;">Follow us on Twitter!</p>
-		<a href="https://twitter.com/ItsSironka"style="color: #4F002F;" class="full">Follow our page <i class="fa fa-twitter"></i></a>
-    	<a class="twitter-timeline" data-dnt="true" href="https://twitter.com/ItsSironka" data-widget-id="654554870716989440">Tweets by @ItsSironka</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-<br/>
-<br/>
-<p style="font-size:30px;">We're on Instagram!</p>
-		<a href="http://instagram.com/itssironka"style="color: #4F002F;" class="full">Follow our page <i class="fa fa-instagram"></i></a>
-		<iframe src="http://widget.websta.me/in/itssironka/?s=250&w=2&h=1&b=1&bg=FFFFFF&p=100" allowtransparency="true" frameborder="0" scrolling="yes" style="border:none;overflow:hidden;width:320px; height: 360px" ></iframe> <!-- websta - web.stagram.com -->
-    </div>
-	</div>
-</div>
-<!-- <div ng-controller="item1">
-<table>
-<tr>
-<th>image</th>
-<th>description</th>
-<th>price</th>
-<th>tax</th>
-</tr>
-	<tr ng-repeat="product in products">
-		<td>{{product.image}}</td>
-		<td>{{product.description}}</td>
-		<td>{{product.price}}</td>
-		<td>{{product.tax}}</td>
-	</tr>
-	</table>
-</div> -->
-
+<div class="info-wrap">
+				<div class="info"style="color:white;font-family: 'Open Sans Condensed', sans-serif;">
+				<img src="img/title.png" style="width:100px" height="300px;">
+					<h3 >JOIN US</h3>
+					<p>Join us today and get a 20% off from your first purchase of products.</p>
+					<p class="info-close row" style="border:none;">
+						<input class="col s12 m10" type="email" placeholder="Enter your email address">
+						<input class="btns btn-default begin col s12 m2" type="submit" value="JOIN" style="padding:left:8px;padding-right:8px;float:right;padding-top:5px;padding-bottom:5px;border-radius:0px;text-align:center;" />
+					</p>
+					<button class="info-close" style="border:none;">CLOSE</button>
+				</div>
+			</div>
 
 <div class="foot">
-<div class="row">
-<div class="col s2 hid" style="padding-top:15px;"><span ><a style="text-align:center;" href="#"><img src="img/title2.png" height="80px;" width="180px"></a></span></div>
-	<div class="col s6" style="padding-bottom:25px;padding-top:40px;">
-		<span>&#169; Copyright Sironka 2015</span>
-		<p class="cnt">
+<div class="row"style="padding-top:20px;font-family: 'Open Sans Condensed', sans-serif;">
+	<div class="col s2" style="opacity:0">.</div>
+	<div class="col s12 m2">
+		<p>CUSTOMER CARE</p>
+		<br/>
+		<a href="#">Shipping and Handling</a><br/>
+		<a href="#">Return Policy</a><br/>
+		<a href="#">FAQ</a><br/>
+		<a href="#">Gift Cards</a><br/>
+		<a href="#">Contact Us</a><br/>
+		<a href="#">Privacy Policy</a><br/>
+	</div>
+	<div class="col s12 m2">
+		<p>GET INVOLVED</p>
+		<br/>
+		<a href="#">Retail Partnership</a><br/>
+		<a href="#">Become an Ambassador</a><br/>
+		<a href="#">Corporate Gifting</a><br/>
+		<a href="#">Jobs and Fellowship</a><br/>
+		<a href="#">Co-Design</a><br/>
+	</div>
+	<div class="col s12 m3">
+		<p>GET SOCIAL</p>
+		<br/>
 		<a href="http://instagram.com/itssironka" target="ig" title="Instagram"><i class="fa fa-instagram"></i></a> |
 		<a href="https://www.facebook.com/sironkake" target="fb" title="Facebook"><i class="fa fa-facebook-official"></i></a> |
 		<a href="https://twitter.com/ItsSironka" target="tweet" title="Twitter"><i class="fa fa-twitter"></i></a> |
 		<a href="https://www.pinterest.com" target="pin" title="Pinterest"><i class="fa fa-pinterest-square"></i></a></p>
+	</div>
+</div>
+<div class="row">
+<div class="col s2 hid"><span ><a style="text-align:center;" href="#"><img src="img/title2.png" height="80px;" width="180px"></a></span></div>
+	<div class="col s6" style="padding-top:20px;font-family: 'Open Sans Condensed', sans-serif;">
+		<span>&#169; Copyright Sironka 2015</span>
+		<p class="cnt">
+		
 		</div>
 	</div>
 </div>
+
+		<script src="intro/js/main.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 <script type="text/javascript" src="controller.js"></script>
 <script src="ig/sironka.js"></script>

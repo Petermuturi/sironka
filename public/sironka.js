@@ -11,7 +11,7 @@ function validation_for_signup()
                                                 document.signup.email.focus();
                                                 return false;
                                 }
-                                else if(check_email.test(document.signup.email.value) == false)
+                                else if(check_email.test(document.signup.email.value) === false)
                                 {
                                                 alert('Invalid  email');
                                                 document.signup.email.focus();
@@ -23,7 +23,7 @@ function validation_for_signup()
                                                 document.signup.username.focus();
                                                 return false;
                                 }
-                                else if(check_username.test(document.signup.username.value) == false)
+                                else if(check_username.test(document.signup.username.value) === false)
                                 {
                                                 alert('Invalid  username');
                                                 document.signup.username.focus();
@@ -35,7 +35,7 @@ function validation_for_signup()
                                                 document.signup.passconf.focus();
                                                 return false;
                                 }
-                                 else if(check_phone.test(document.signup.phone.value) == false)
+                                 else if(check_phone.test(document.signup.phone.value) === false)
                                 {
                                                 alert('Invalid  phone number');
                                                 document.signup.phone.focus();

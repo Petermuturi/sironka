@@ -2,6 +2,7 @@
  text-decoration: underline;
  color:#4F002F ;
 }
+
 .nav{
 
   color: white;
@@ -13,9 +14,9 @@
 	color: #4F002F;
 }
 .bout{
- text-align: center;
- padding-top: 40px;
- font-size: 14px;
+font-family: 'Open Sans Condensed', sans-serif;
+ padding-top: 20px;
+ font-size: 20px;
 
 }
 .pp{
@@ -120,9 +121,14 @@ position:relative;
 	padding-bottom: 10px;
 }
 .foot a{
+	font-size: 18px;
 	color: #4F002F;
 }
 .foot a:hover{
+	color: #E8E8E8;
+	text-decoration: underline;
+}
+.foot p{
 	color: #E8E8E8;
 }
 .cnt{
